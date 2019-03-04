@@ -5,40 +5,35 @@
 delete from product;
 delete from category;
 
-insert into category (id,name) values ( 1,'Audio' );
-insert into category (id,name) values ( 2,'Books' );
-insert into category (id,name) values ( 3,'Computer' );
-insert into category (id,name) values ( 4,'Furniture' );
-insert into category (id,name) values ( 5,'Kitchen' );
-insert into category (id,name) values ( 6,'Laundry' );
-insert into category (id,name) values ( 7,'Mobile Phone' ); 
-insert into category (id,name) values ( 8,'Television' ); 
+insert into category (id,name) values ( 1,'Laptop' );
+insert into category (id,name) values ( 2,'Tablet' );
+insert into category (id,name) values ( 3,'Mobile Phone' );
+
  
-insert into product (id,name,description,stock,price) values ( 1,'Kettle','Steel Electric Kettle',100,55.00 );
-insert into product (id,name,description,stock,price) values ( 2,'Fridge freezer','Fridge + freezer large',45,799.00 );
-insert into product (id,name,description,stock,price) values ( 3,'Portable Music Player','250GB music player (MP3,MP4,WMA,WAV)',5,99.00 );
-insert into product (id,name,description,stock,price) values ( 4,'13inch Laptop','HP laptop,8GB RAM,250GB SSD',45,799.00 );
-insert into product (id,name,description,stock,price) values ( 5,'8inch Tablet','Android 5.1 Tablet,32GB storage,8inch screen',5,99.00 );
-insert into product (id,name,description,stock,price) values ( 6,'46inch TV','Sony 4K,OLED,Smart TV',12,2799.00 );
-insert into product (id,name,description,stock,price) values ( 7,'Washing Machine','1600rpm spin,A+++ rated,10KG',50,699.00 );
-insert into product (id,name,description,stock,price) values ( 8,'Phone','Windows 10,5.2inch OLED,3GB RAM,64GB Storage',45,799.00 );
-insert into product (id,name,description,stock,price) values ( 9,'10inch Tablet','Windows 10,128GB storage,8inch screen',5,299.00 );
-insert into product (id,name,description,stock,price) values ( 10,'Oven','Oven + Grill,Stainless Steel',10,399.00 );
-insert into product (id,name,description,stock,price) values ( 11,'Bed','Super King size,super comfort mattress',5,899.00 );
-insert into product (id,name,description,stock,price) values ( 12,'Learning JavaScript','Become a JavaScript expert in 2 hours!',50,29.00 );
+insert into product (id,category_id,name,description,stock,price) values ( 1,1,'Apple Laptop','MacBook pro 13',100,192.55 );
+insert into product (id,category_id,name,description,stock,price) values ( 2,1,'Apple Laptop','MacBook pro retina 13.3 2016 256GB',45,721.00 );
+insert into product (id,category_id,name,description,stock,price) values ( 3,1,'Samsung Laptop','NP355-V5C LAPTOP WINDOWS 10 AMD A6 WEBCAM 6GB 500GB 15.6" HDMI 12696',580,162.81 );
+insert into product (id,category_id,name,description,stock,price) values ( 4,1,'Samsung Laptop','RV511 LAPTOP WINDOWS 7 CORE i3 WEBCAM 3GB 320GB 15.6" HDMI 13130',312,145.00 );
+insert into product (id,category_id,name,description,stock,price) values ( 5,3,'Apple Mobile Phone','iPHONE 6 16GB / 64GB / 128GB  Smartphone Mobile Phone',333,203.00 );
+insert into product (id,category_id,name,description,stock,price) values ( 6,3,'Apple Mobile Phone','iPHONE 6 PLUS 16GB / 64GB Smartphone Mobile Phone',121,2799.00 );
+insert into product (id,category_id,name,description,stock,price) values ( 7,3,'Samsung Mobile Phone','Galaxy S7 Edge G935 Black Gold Silver Blue Android Smart phone',250,232.59 );
+insert into product (id,category_id,name,description,stock,price) values ( 8,3,'Samsung Mobile Phone','Galaxy S8 Dual sim G950FD 64GB Phone ',45,370.00 );
+insert into product (id,category_id,name,description,stock,price) values ( 9,2,'Apple Tablet','iPAD MINI TABLET 16GB 7.9INCH HD WIFI WEBCAM BLUETOOTH BLACK',55,162.00 );
+insert into product (id,category_id,name,description,stock,price) values ( 10,2,'Apple Tablet','iPad Pro (11-inch, WiFi, 64GB) - Space Grey (Latest Model) 2018',180,789.70 );
+insert into product (id,category_id,name,description,stock,price) values ( 11,2,'Samsung Tablet','GALAXY TAB E SM-T560 16GB WI-Fi 9.6" TABLET BLACK',55,122.99 );
+insert into product (id,category_id,name,description,stock,price) values ( 12,2,'Samsung Tablet','Galaxy Tab A 10.5 Tablet - Grey SM-T590 Grade A+ ',50,232.59 );
  
-insert into category_product (category_id,product_id) values (5,1);
-insert into category_product (category_id,product_id) values (5,2);
+insert into category_product (category_id,product_id) values (1,1);
+insert into category_product (category_id,product_id) values (1,2);
 insert into category_product (category_id,product_id) values (1,3);
-insert into category_product (category_id,product_id) values (3,4);
+insert into category_product (category_id,product_id) values (1,4);
 insert into category_product (category_id,product_id) values (3,5);
-insert into category_product (category_id,product_id) values (8,6);
-insert into category_product (category_id,product_id) values (6,7);
-insert into category_product (category_id,product_id) values (7,8);  
-insert into category_product (category_id,product_id) values (3,9);
-insert into category_product (category_id,product_id) values (5,10);
-insert into category_product (category_id,product_id) values (4,11);
+insert into category_product (category_id,product_id) values (3,6);
+insert into category_product (category_id,product_id) values (3,7);
+insert into category_product (category_id,product_id) values (3,8);  
+insert into category_product (category_id,product_id) values (2,9);
+insert into category_product (category_id,product_id) values (2,10);
+insert into category_product (category_id,product_id) values (2,11);
 insert into category_product (category_id,product_id) values (2,12);
-insert into category_product (category_id,product_id) values (5,7);
-insert into category_product (category_id,product_id) values (3,8);
-insert into category_product (category_id,product_id) values (3,3);  
+
+ 

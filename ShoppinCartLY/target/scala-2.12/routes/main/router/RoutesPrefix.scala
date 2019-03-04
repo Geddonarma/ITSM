@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
-// @SOURCE:/home/patricia/wdd1labs/PlayLabs/ShoppinCartLY/conf/routes
-// @DATE:Sat Feb 23 16:07:56 GMT 2019
+// @SOURCE:/home/wdd/Desktop/ITSM/ShoppinCartLY/conf/routes
+// @DATE:Mon Mar 04 14:25:28 GMT 2019
 
 
 package router {

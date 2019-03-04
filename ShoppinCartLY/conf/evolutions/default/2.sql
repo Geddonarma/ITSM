@@ -23,18 +23,17 @@ insert into product (id,category_id,name,description,stock,price) values ( 10,2,
 insert into product (id,category_id,name,description,stock,price) values ( 11,2,'Samsung Tablet','GALAXY TAB E SM-T560 16GB WI-Fi 9.6" TABLET BLACK',55,122.99 );
 insert into product (id,category_id,name,description,stock,price) values ( 12,2,'Samsung Tablet','Galaxy Tab A 10.5 Tablet - Grey SM-T590 Grade A+ ',50,232.59 );
  
-insert into category_product (category_id,product_id) values (5,1);
-insert into category_product (category_id,product_id) values (5,2);
+insert into category_product (category_id,product_id) values (1,1);
+insert into category_product (category_id,product_id) values (1,2);
 insert into category_product (category_id,product_id) values (1,3);
-insert into category_product (category_id,product_id) values (3,4);
+insert into category_product (category_id,product_id) values (1,4);
 insert into category_product (category_id,product_id) values (3,5);
-insert into category_product (category_id,product_id) values (8,6);
-insert into category_product (category_id,product_id) values (6,7);
-insert into category_product (category_id,product_id) values (7,8);  
-insert into category_product (category_id,product_id) values (3,9);
-insert into category_product (category_id,product_id) values (5,10);
-insert into category_product (category_id,product_id) values (4,11);
+insert into category_product (category_id,product_id) values (3,6);
+insert into category_product (category_id,product_id) values (3,7);
+insert into category_product (category_id,product_id) values (3,8);  
+insert into category_product (category_id,product_id) values (2,9);
+insert into category_product (category_id,product_id) values (2,10);
+insert into category_product (category_id,product_id) values (2,11);
 insert into category_product (category_id,product_id) values (2,12);
-insert into category_product (category_id,product_id) values (5,7);
-insert into category_product (category_id,product_id) values (3,8);
-insert into category_product (category_id,product_id) values (3,3);  
+
+ 
