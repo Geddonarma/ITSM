@@ -45,7 +45,9 @@ public class ProductCtrl extends Controller {
     public Result index() {
         return redirect(routes.ProductCtrl.listProducts(0,""));
     }
-
+    public Result about() {
+        return redirect(routes.ProductCtrl.about());
+    }
     // Get a list of products
     // If cat parameter is 0 then return all products
     // Otherwise return products for a category (by id)

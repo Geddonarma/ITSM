@@ -10,6 +10,9 @@ GET		/   						        controllers.ProductCtrl.index()
 GET     /listProducts                       controllers.ProductCtrl.listProducts(cat:Long ?= 0, filter?="")
 GET     /productDetails/:id                 controllers.ProductCtrl.productDetails(id:Long)
 
+# About
+GET		/about						        controllers.ProductCtrl.about()
+
 # Login form
 GET		/login						        controllers.security.LoginCtrl.login()
 POST	/login						        controllers.security.LoginCtrl.loginSubmit()
