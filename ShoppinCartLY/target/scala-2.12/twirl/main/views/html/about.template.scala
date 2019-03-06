@@ -32,7 +32,7 @@ object about extends _root_.play.twirl.api.BaseScalaTemplate[play.twirl.api.Html
 
 Seq[Any](format.raw/*1.72*/("""
 
-"""),format.raw/*3.1*/("""<h1>hi</h1>"""))
+"""),format.raw/*3.1*/("""<h1>Welcome to the Portable Device online store created by Stephanie, Armandes and Hiep</h1>"""))
       }
     }
   }
@@ -48,9 +48,9 @@ Seq[Any](format.raw/*1.72*/("""
 
               /*
                   -- GENERATED --
-                  DATE: Tue Mar 05 14:07:41 GMT 2019
+                  DATE: Wed Mar 06 12:44:33 GMT 2019
                   SOURCE: /home/wdd/Desktop/ITSM/ShoppinCartLY/app/views/about.scala.html
-                  HASH: 4d4cbe27d89876636e961a83665fb04d1328ea64
+                  HASH: 9ba608726a998323f01386c64545501353875cf2
                   MATRIX: 986->1|1151->71|1179->73
                   LINES: 28->1|33->1|35->3
                   -- GENERATED --
