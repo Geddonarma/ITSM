@@ -45,8 +45,12 @@ public class ProductCtrl extends Controller {
     public Result index() {
         return redirect(routes.ProductCtrl.listProducts(0,""));
     }
+    //public Result about() {
+      //  return ok(about.render());
+    //}
+    
     public Result about() {
-        return redirect(routes.ProductCtrl.about());
+        return ok(about.render(User.getLoggedIn(session().get("email"))));
     }
     // Get a list of products
     // If cat parameter is 0 then return all products

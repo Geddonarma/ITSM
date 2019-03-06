@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
 // @SOURCE:/home/wdd/Desktop/ITSM/ShoppinCartLY/conf/routes
-// @DATE:Tue Mar 05 13:30:50 GMT 2019
+// @DATE:Wed Mar 06 15:23:46 GMT 2019
 
 package router
 
@@ -55,7 +55,7 @@ class Routes(
     ("""GET""", this.prefix, """controllers.ProductCtrl.index()"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """listProducts""", """controllers.ProductCtrl.listProducts(cat:Long ?= 0, filter:String ?= "")"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """productDetails/""" + "$" + """id<[^/]+>""", """controllers.ProductCtrl.productDetails(id:Long)"""),
-    ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """about""", """controllers.ProductCtrl.about()"""),
+    ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """about""", """controllers.ProductCtrl.about"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """login""", """controllers.security.LoginCtrl.login()"""),
     ("""POST""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """login""", """controllers.security.LoginCtrl.loginSubmit()"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """logout""", """controllers.security.LoginCtrl.logout()"""),
@@ -142,7 +142,7 @@ class Routes(
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("about")))
   )
   private[this] lazy val controllers_ProductCtrl_about3_invoker = createInvoker(
-    ProductCtrl_0.about(),
+    ProductCtrl_0.about,
     play.api.routing.HandlerDef(this.getClass.getClassLoader,
       "router",
       "controllers.ProductCtrl",
@@ -539,7 +539,7 @@ class Routes(
     // @LINE:14
     case controllers_ProductCtrl_about3_route(params@_) =>
       call { 
-        controllers_ProductCtrl_about3_invoker.call(ProductCtrl_0.about())
+        controllers_ProductCtrl_about3_invoker.call(ProductCtrl_0.about)
       }
   
     // @LINE:17

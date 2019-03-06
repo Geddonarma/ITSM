@@ -11,7 +11,7 @@ GET     /listProducts                       controllers.ProductCtrl.listProducts
 GET     /productDetails/:id                 controllers.ProductCtrl.productDetails(id:Long)
 
 # About
-GET		/about						        controllers.ProductCtrl.about()
+GET		/about						        controllers.ProductCtrl.about
 
 # Login form
 GET		/login						        controllers.security.LoginCtrl.login()
