@@ -1,5 +1,4 @@
-[0m[[0m[31merror[0m] [0m[0m/home/wdd/Desktop/ITSM/ShoppinCartLY/app/controllers/ProductCtrl.java:53:1: method render in class views.html.about cannot be applied to given types;[0m
-[0m[[0m[31merror[0m] [0m[0m  required: no arguments[0m
-[0m[[0m[31merror[0m] [0m[0m  found: models.users.User[0m
-[0m[[0m[31merror[0m] [0m[0m  reason: actual and formal argument lists differ in length[0m
-[0m[[0m[31merror[0m] [0m[0m        return ok(about.render(User.getLoggedIn(session().get("email"))));[0m
+[0m[[0m[33mwarn[0m] [0m[0m/home/wdd/Desktop/ITSM/ShoppinCartLY/app/views/login.scala.html:12:28: method globalError in class Form is deprecated: see corresponding Javadoc for more information.[0m
+[0m[[0m[33mwarn[0m] [0m[0m                @loginForm.globalError.message;[0m
+[0m[[0m[33mwarn[0m] [0m[0m                           ^[0m
+[0m[[0m[33mwarn[0m] [0m[0mone warning found[0m
