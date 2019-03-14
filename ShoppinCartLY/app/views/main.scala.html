@@ -3,6 +3,35 @@
 <!DOCTYPE html>
 
 <html lang="en">
+<style>
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+
+} 
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+  </style>
 
 <head>
     <meta charset="utf-8">
@@ -29,8 +58,17 @@
 
                 <li @if(title=="Products" ){class="active"}>
                  <a class="navbar-brand" href="@routes.ProductCtrl.listProducts(0)">home</a>
-                    
                 </li>
+
+                <div class="dropdown">
+                    <button class="dropbtn">Menu</button>
+                    <div class="dropdown-content">
+                      <a href="@routes.ProductCtrl.listProducts(0)">Search for Products</a>
+                      <a href="@routes.ProductCtrl.about">About Us</a>
+                      <a href="#">Contact Us</a>
+                      
+                    </div>
+                  </div>
 
                 <li @if(title=="About" ){class="active"}>
                     <a href="@routes.ProductCtrl.about">About us</a>
