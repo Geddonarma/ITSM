@@ -75,7 +75,9 @@
                 </li>
 
                 <li>
-                    <a href="#">Contact</a>
+                    <li @if(title=="Contact" ){class="active"}>
+                        <a href="@routes.ProductCtrl.contact">Contact us</a>
+                    </li>
                 </li>
                 <li @if(title=="Login"){class="active"}>
                     @if(user != null) {

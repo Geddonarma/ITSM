@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
 // @SOURCE:/home/wdd/Desktop/ITSM/ShoppinCartLY/conf/routes
-// @DATE:Wed Mar 06 15:23:46 GMT 2019
+// @DATE:Thu Mar 14 11:45:46 GMT 2019
 
 import play.api.routing.JavaScriptReverseRoute
 
@@ -9,10 +9,10 @@ import play.api.routing.JavaScriptReverseRoute
 import _root_.controllers.Assets.Asset
 import _root_.play.libs.F
 
-// @LINE:17
+// @LINE:18
 package controllers.security.javascript {
 
-  // @LINE:17
+  // @LINE:18
   class ReverseLoginCtrl(_prefix: => String) {
 
     def _defaultPrefix: String = {
@@ -20,7 +20,7 @@ package controllers.security.javascript {
     }
 
   
-    // @LINE:18
+    // @LINE:19
     def loginSubmit: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.security.LoginCtrl.loginSubmit",
       """
@@ -30,7 +30,7 @@ package controllers.security.javascript {
       """
     )
   
-    // @LINE:19
+    // @LINE:20
     def logout: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.security.LoginCtrl.logout",
       """
@@ -40,7 +40,7 @@ package controllers.security.javascript {
       """
     )
   
-    // @LINE:17
+    // @LINE:18
     def login: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.security.LoginCtrl.login",
       """

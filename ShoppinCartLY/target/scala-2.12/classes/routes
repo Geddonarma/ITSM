@@ -12,6 +12,7 @@ GET     /productDetails/:id                 controllers.ProductCtrl.productDetai
 
 # About
 GET		/about						        controllers.ProductCtrl.about
+GET		/contact						        controllers.ProductCtrl.contact
 
 # Login form
 GET		/login						        controllers.security.LoginCtrl.login()
