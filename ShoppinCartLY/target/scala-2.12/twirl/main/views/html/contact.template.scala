@@ -34,8 +34,9 @@ Seq[Any](format.raw/*1.27*/("""
 """),_display_(/*2.2*/main("Contact",user)/*2.22*/{_display_(Seq[Any](format.raw/*2.23*/("""
 
 """),format.raw/*4.1*/("""<h1>Contact Us!</h1>
+<br>
 
-<h4>Customer support can be reached at these available times:</h4>
+<h4><b>Customer support can be reached at these available times:</b></h4>
 
 <p>Monday: 8am - 6pm
 <br>
@@ -51,15 +52,16 @@ Saturday: 8am - 6pm
 <br>
 Sunday: 8am - 4pm
 </p>
+<br>
 
-<h4>Email Us</h4>
+<h4><b>Email Us</b></h4>
 <p>
     Email: "managerproductscom" for Manager assistace on Product enquiries
     <br>
     Email: "adminproductscom" for Administration assistace on Account enquiries
 </p>
 
-""")))}),format.raw/*30.2*/("""	"""))
+""")))}),format.raw/*32.2*/("""	"""))
       }
     }
   }
@@ -75,11 +77,11 @@ Sunday: 8am - 4pm
 
               /*
                   -- GENERATED --
-                  DATE: Thu Mar 14 11:57:10 GMT 2019
+                  DATE: Thu Mar 14 13:31:58 GMT 2019
                   SOURCE: /home/wdd/Desktop/ITSM/ShoppinCartLY/app/views/contact.scala.html
-                  HASH: 2853ea97a6b1c4a0cb94ac323fa218a9974f2321
-                  MATRIX: 961->1|1081->26|1108->28|1136->48|1174->49|1202->51|1688->507
-                  LINES: 28->1|33->1|34->2|34->2|34->2|36->4|62->30
+                  HASH: 87ceb98c6fbfb1b2b4c6000ffc65d22496460cdd
+                  MATRIX: 961->1|1081->26|1108->28|1136->48|1174->49|1202->51|1712->531
+                  LINES: 28->1|33->1|34->2|34->2|34->2|36->4|64->32
                   -- GENERATED --
               */
           
