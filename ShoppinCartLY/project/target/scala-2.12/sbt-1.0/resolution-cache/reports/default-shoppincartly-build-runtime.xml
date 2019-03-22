@@ -9,7 +9,7 @@
 		extra-sbtVersion="1.0"
 		conf="runtime"
 		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, pom, scala-tool"
-		date="20190322104518"/>
+		date="20190322113512"/>
 	<dependencies>
 		<module organisation="com.typesafe.sbt" name="sbt-play-ebean">
 			<revision name="4.0.6" status="release" pubdate="20171011200637" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/playframework/play-ebean" extra-scalaVersion="2.12" extra-sbtVersion="1.0" downloaded="false" searched="false" default="false" conf="compile, default(compile)" position="128">
@@ -436,13 +436,13 @@
 			</revision>
 		</module>
 		<module organisation="com.typesafe.play" name="sbt-plugin">
-			<revision name="2.6.11" status="release" pubdate="20180111201749" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://playframework.com" extra-scalaVersion="2.12" extra-sbtVersion="1.0" downloaded="false" searched="false" default="false" conf="compile, default(compile)" position="0">
+			<revision name="2.6.11" status="release" pubdate="20180111201749" resolver="sbt-plugin-releases" artresolver="sbt-plugin-releases" homepage="https://playframework.com" extra-scalaVersion="2.12" extra-sbtVersion="1.0" downloaded="true" searched="true" default="false" conf="compile, default(compile)" position="0">
 				<license name="Apache-2.0" url="http://www.apache.org/licenses/LICENSE-2.0.html"/>
-				<metadata-artifact status="no" details="" size="3318" time="0" location="/home/wdd/.ivy2/cache/scala_2.12/sbt_1.0/com.typesafe.play/sbt-plugin/ivy-2.6.11.xml" searched="false" origin-is-local="false" origin-location="https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.play/sbt-plugin/scala_2.12/sbt_1.0/2.6.11/ivys/ivy.xml"/>
+				<metadata-artifact status="successful" details="" size="3318" time="509" location="/home/wdd/.ivy2/cache/scala_2.12/sbt_1.0/com.typesafe.play/sbt-plugin/ivy-2.6.11.xml" searched="true" original-local-location="/home/wdd/.ivy2/cache/scala_2.12/sbt_1.0/com.typesafe.play/sbt-plugin/ivy-2.6.11.xml.original" origin-is-local="false" origin-location="https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.play/sbt-plugin/scala_2.12/sbt_1.0/2.6.11/ivys/ivy.xml"/>
 				<caller organisation="com.typesafe.sbt" name="sbt-play-ebean" conf="compile" rev="2.6.6" rev-constraint-default="2.6.6" rev-constraint-dynamic="2.6.6" callerrev="4.0.6" extra-scalaVersion="2.12" extra-sbtVersion="1.0"/>
 				<caller organisation="default" name="shoppincartly-build" conf="compile, runtime" rev="2.6.11" rev-constraint-default="2.6.11" rev-constraint-dynamic="2.6.11" callerrev="0.1-SNAPSHOT" extra-scalaVersion="2.12" extra-sbtVersion="1.0"/>
 				<artifacts>
-					<artifact name="sbt-plugin" type="jar" ext="jar" status="no" details="" size="216433" time="0" location="/home/wdd/.ivy2/cache/scala_2.12/sbt_1.0/com.typesafe.play/sbt-plugin/jars/sbt-plugin-2.6.11.jar">
+					<artifact name="sbt-plugin" type="jar" ext="jar" status="successful" details="" size="216433" time="1012" location="/home/wdd/.ivy2/cache/scala_2.12/sbt_1.0/com.typesafe.play/sbt-plugin/jars/sbt-plugin-2.6.11.jar">
 						<origin-location is-local="false" location="https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.play/sbt-plugin/scala_2.12/sbt_1.0/2.6.11/jars/sbt-plugin.jar"/>
 					</artifact>
 				</artifacts>
@@ -818,11 +818,11 @@
 			</revision>
 		</module>
 		<module organisation="com.typesafe.sbt" name="sbt-native-packager">
-			<revision name="1.3.2" status="release" pubdate="20171101143717" resolver="sbt-chain" artresolver="sbt-chain" extra-scalaVersion="2.12" extra-sbtVersion="1.0" downloaded="false" searched="false" default="false" conf="compile, default(compile)" position="25">
-				<metadata-artifact status="no" details="" size="3449" time="0" location="/home/wdd/.ivy2/cache/scala_2.12/sbt_1.0/com.typesafe.sbt/sbt-native-packager/ivy-1.3.2.xml" searched="false" origin-is-local="false" origin-location="https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.sbt/sbt-native-packager/scala_2.12/sbt_1.0/1.3.2/ivys/ivy.xml"/>
+			<revision name="1.3.2" status="release" pubdate="20171101143717" resolver="sbt-plugin-releases" artresolver="sbt-plugin-releases" extra-scalaVersion="2.12" extra-sbtVersion="1.0" downloaded="true" searched="true" default="false" conf="compile, default(compile)" position="25">
+				<metadata-artifact status="successful" details="" size="3449" time="481" location="/home/wdd/.ivy2/cache/scala_2.12/sbt_1.0/com.typesafe.sbt/sbt-native-packager/ivy-1.3.2.xml" searched="true" original-local-location="/home/wdd/.ivy2/cache/scala_2.12/sbt_1.0/com.typesafe.sbt/sbt-native-packager/ivy-1.3.2.xml.original" origin-is-local="false" origin-location="https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.sbt/sbt-native-packager/scala_2.12/sbt_1.0/1.3.2/ivys/ivy.xml"/>
 				<caller organisation="com.typesafe.play" name="sbt-plugin" conf="compile" rev="1.3.2" rev-constraint-default="1.3.2" rev-constraint-dynamic="1.3.2" callerrev="2.6.11" extra-scalaVersion="2.12" extra-sbtVersion="1.0"/>
 				<artifacts>
-					<artifact name="sbt-native-packager" type="jar" ext="jar" status="no" details="" size="711296" time="0" location="/home/wdd/.ivy2/cache/scala_2.12/sbt_1.0/com.typesafe.sbt/sbt-native-packager/jars/sbt-native-packager-1.3.2.jar">
+					<artifact name="sbt-native-packager" type="jar" ext="jar" status="successful" details="" size="711296" time="2087" location="/home/wdd/.ivy2/cache/scala_2.12/sbt_1.0/com.typesafe.sbt/sbt-native-packager/jars/sbt-native-packager-1.3.2.jar">
 						<origin-location is-local="false" location="https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.sbt/sbt-native-packager/scala_2.12/sbt_1.0/1.3.2/jars/sbt-native-packager.jar"/>
 					</artifact>
 				</artifacts>
@@ -1122,7 +1122,7 @@
 		<module organisation="org.codehaus.plexus" name="plexus-interpolation">
 			<revision name="1.19" status="release" pubdate="20130806205710" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="79">
 				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
-				<metadata-artifact status="no" details="" size="7266" time="0" location="/home/wdd/.ivy2/cache/org.codehaus.plexus/plexus-interpolation/ivy-1.19.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/codehaus/plexus/plexus-interpolation/1.19/plexus-interpolation-1.19.pom"/>
+				<metadata-artifact status="no" details="" size="7160" time="0" location="/home/wdd/.ivy2/cache/org.codehaus.plexus/plexus-interpolation/ivy-1.19.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/codehaus/plexus/plexus-interpolation/1.19/plexus-interpolation-1.19.pom"/>
 				<caller organisation="org.apache.maven" name="maven-model-builder" conf="compile, runtime" rev="1.19" rev-constraint-default="1.19" rev-constraint-dynamic="1.19" callerrev="3.2.2"/>
 				<caller organisation="org.apache.maven" name="maven-settings-builder" conf="compile, runtime" rev="1.19" rev-constraint-default="1.19" rev-constraint-dynamic="1.19" callerrev="3.2.2"/>
 				<caller organisation="org.apache.maven" name="maven-core" conf="compile, runtime" rev="1.19" rev-constraint-default="1.19" rev-constraint-dynamic="1.19" callerrev="3.2.2"/>
@@ -1868,36 +1868,36 @@
 			</revision>
 		</module>
 		<module organisation="com.typesafe.sbt" name="sbt-twirl">
-			<revision name="1.3.12" status="release" pubdate="20170929190018" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/playframework/twirl" extra-scalaVersion="2.12" extra-sbtVersion="1.0" downloaded="false" searched="false" default="false" conf="compile, default(compile)" position="20">
+			<revision name="1.3.12" status="release" pubdate="20170929190018" resolver="sbt-plugin-releases" artresolver="sbt-plugin-releases" homepage="https://github.com/playframework/twirl" extra-scalaVersion="2.12" extra-sbtVersion="1.0" downloaded="true" searched="true" default="false" conf="compile, default(compile)" position="20">
 				<license name="Apache-2.0" url="http://www.apache.org/licenses/LICENSE-2.0.html"/>
-				<metadata-artifact status="no" details="" size="1771" time="0" location="/home/wdd/.ivy2/cache/scala_2.12/sbt_1.0/com.typesafe.sbt/sbt-twirl/ivy-1.3.12.xml" searched="false" origin-is-local="false" origin-location="https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.sbt/sbt-twirl/scala_2.12/sbt_1.0/1.3.12/ivys/ivy.xml"/>
+				<metadata-artifact status="successful" details="" size="1771" time="489" location="/home/wdd/.ivy2/cache/scala_2.12/sbt_1.0/com.typesafe.sbt/sbt-twirl/ivy-1.3.12.xml" searched="true" original-local-location="/home/wdd/.ivy2/cache/scala_2.12/sbt_1.0/com.typesafe.sbt/sbt-twirl/ivy-1.3.12.xml.original" origin-is-local="false" origin-location="https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.sbt/sbt-twirl/scala_2.12/sbt_1.0/1.3.12/ivys/ivy.xml"/>
 				<caller organisation="com.typesafe.play" name="sbt-plugin" conf="compile" rev="1.3.12" rev-constraint-default="1.3.12" rev-constraint-dynamic="1.3.12" callerrev="2.6.11" extra-scalaVersion="2.12" extra-sbtVersion="1.0"/>
 				<artifacts>
-					<artifact name="sbt-twirl" type="jar" ext="jar" status="no" details="" size="51690" time="0" location="/home/wdd/.ivy2/cache/scala_2.12/sbt_1.0/com.typesafe.sbt/sbt-twirl/jars/sbt-twirl-1.3.12.jar">
+					<artifact name="sbt-twirl" type="jar" ext="jar" status="successful" details="" size="51690" time="3551" location="/home/wdd/.ivy2/cache/scala_2.12/sbt_1.0/com.typesafe.sbt/sbt-twirl/jars/sbt-twirl-1.3.12.jar">
 						<origin-location is-local="false" location="https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.sbt/sbt-twirl/scala_2.12/sbt_1.0/1.3.12/jars/sbt-twirl.jar"/>
 					</artifact>
 				</artifacts>
 			</revision>
 		</module>
 		<module organisation="com.typesafe.play" name="twirl-compiler_2.12">
-			<revision name="1.3.12" status="release" pubdate="20170929195958" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/playframework/twirl" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="21">
+			<revision name="1.3.12" status="release" pubdate="20170929195958" resolver="public" artresolver="public" homepage="https://github.com/playframework/twirl" downloaded="true" searched="true" default="false" conf="default, compile, runtime, default(compile), master" position="21">
 				<license name="Apache-2.0" url="http://www.apache.org/licenses/LICENSE-2.0.html"/>
-				<metadata-artifact status="no" details="" size="3283" time="0" location="/home/wdd/.ivy2/cache/com.typesafe.play/twirl-compiler_2.12/ivy-1.3.12.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/typesafe/play/twirl-compiler_2.12/1.3.12/twirl-compiler_2.12-1.3.12.pom"/>
+				<metadata-artifact status="successful" details="" size="2306" time="76" location="/home/wdd/.ivy2/cache/com.typesafe.play/twirl-compiler_2.12/ivy-1.3.12.xml" searched="true" original-local-location="/home/wdd/.ivy2/cache/com.typesafe.play/twirl-compiler_2.12/ivy-1.3.12.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/typesafe/play/twirl-compiler_2.12/1.3.12/twirl-compiler_2.12-1.3.12.pom"/>
 				<caller organisation="com.typesafe.sbt" name="sbt-twirl" conf="compile" rev="1.3.12" rev-constraint-default="1.3.12" rev-constraint-dynamic="1.3.12" callerrev="1.3.12"/>
 				<artifacts>
-					<artifact name="twirl-compiler_2.12" type="jar" ext="jar" status="no" details="" size="67146" time="0" location="/home/wdd/.ivy2/cache/com.typesafe.play/twirl-compiler_2.12/jars/twirl-compiler_2.12-1.3.12.jar">
+					<artifact name="twirl-compiler_2.12" type="jar" ext="jar" status="successful" details="" size="67146" time="110" location="/home/wdd/.ivy2/cache/com.typesafe.play/twirl-compiler_2.12/jars/twirl-compiler_2.12-1.3.12.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/play/twirl-compiler_2.12/1.3.12/twirl-compiler_2.12-1.3.12.jar"/>
 					</artifact>
 				</artifacts>
 			</revision>
 		</module>
 		<module organisation="com.typesafe.play" name="twirl-parser_2.12">
-			<revision name="1.3.12" status="release" pubdate="20170929195830" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/playframework/twirl" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="24">
+			<revision name="1.3.12" status="release" pubdate="20170929195830" resolver="public" artresolver="public" homepage="https://github.com/playframework/twirl" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="24">
 				<license name="Apache-2.0" url="http://www.apache.org/licenses/LICENSE-2.0.html"/>
-				<metadata-artifact status="no" details="" size="3069" time="0" location="/home/wdd/.ivy2/cache/com.typesafe.play/twirl-parser_2.12/ivy-1.3.12.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/typesafe/play/twirl-parser_2.12/1.3.12/twirl-parser_2.12-1.3.12.pom"/>
+				<metadata-artifact status="successful" details="" size="2171" time="79" location="/home/wdd/.ivy2/cache/com.typesafe.play/twirl-parser_2.12/ivy-1.3.12.xml" searched="true" original-local-location="/home/wdd/.ivy2/cache/com.typesafe.play/twirl-parser_2.12/ivy-1.3.12.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/typesafe/play/twirl-parser_2.12/1.3.12/twirl-parser_2.12-1.3.12.pom"/>
 				<caller organisation="com.typesafe.play" name="twirl-compiler_2.12" conf="default, compile, runtime, master" rev="1.3.12" rev-constraint-default="1.3.12" rev-constraint-dynamic="1.3.12" callerrev="1.3.12"/>
 				<artifacts>
-					<artifact name="twirl-parser_2.12" type="jar" ext="jar" status="no" details="" size="78810" time="0" location="/home/wdd/.ivy2/cache/com.typesafe.play/twirl-parser_2.12/jars/twirl-parser_2.12-1.3.12.jar">
+					<artifact name="twirl-parser_2.12" type="jar" ext="jar" status="successful" details="" size="78810" time="150" location="/home/wdd/.ivy2/cache/com.typesafe.play/twirl-parser_2.12/jars/twirl-parser_2.12-1.3.12.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/play/twirl-parser_2.12/1.3.12/twirl-parser_2.12-1.3.12.jar"/>
 					</artifact>
 				</artifacts>
@@ -1926,12 +1926,12 @@
 			</revision>
 		</module>
 		<module organisation="com.typesafe.play" name="run-support_2.12">
-			<revision name="2.6.11" status="release" pubdate="20180111201430" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://playframework.com" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="7">
+			<revision name="2.6.11" status="release" pubdate="20180111201430" resolver="public" artresolver="public" homepage="https://playframework.com" downloaded="true" searched="true" default="false" conf="default, compile, runtime, default(compile), master" position="7">
 				<license name="Apache-2.0" url="http://www.apache.org/licenses/LICENSE-2.0.html"/>
-				<metadata-artifact status="no" details="" size="3453" time="0" location="/home/wdd/.ivy2/cache/com.typesafe.play/run-support_2.12/ivy-2.6.11.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/typesafe/play/run-support_2.12/2.6.11/run-support_2.12-2.6.11.pom"/>
+				<metadata-artifact status="successful" details="" size="2704" time="86" location="/home/wdd/.ivy2/cache/com.typesafe.play/run-support_2.12/ivy-2.6.11.xml" searched="true" original-local-location="/home/wdd/.ivy2/cache/com.typesafe.play/run-support_2.12/ivy-2.6.11.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/typesafe/play/run-support_2.12/2.6.11/run-support_2.12-2.6.11.pom"/>
 				<caller organisation="com.typesafe.play" name="sbt-plugin" conf="compile" rev="2.6.11" rev-constraint-default="2.6.11" rev-constraint-dynamic="2.6.11" callerrev="2.6.11"/>
 				<artifacts>
-					<artifact name="run-support_2.12" type="jar" ext="jar" status="no" details="" size="72367" time="0" location="/home/wdd/.ivy2/cache/com.typesafe.play/run-support_2.12/jars/run-support_2.12-2.6.11.jar">
+					<artifact name="run-support_2.12" type="jar" ext="jar" status="successful" details="" size="72367" time="88" location="/home/wdd/.ivy2/cache/com.typesafe.play/run-support_2.12/jars/run-support_2.12-2.6.11.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/play/run-support_2.12/2.6.11/run-support_2.12-2.6.11.jar"/>
 					</artifact>
 				</artifacts>
@@ -2084,36 +2084,36 @@
 			</revision>
 		</module>
 		<module organisation="com.typesafe.play" name="build-link">
-			<revision name="2.6.11" status="release" pubdate="20180111201427" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://playframework.com" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="8">
+			<revision name="2.6.11" status="release" pubdate="20180111201427" resolver="public" artresolver="public" homepage="https://playframework.com" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="8">
 				<license name="Apache-2.0" url="http://www.apache.org/licenses/LICENSE-2.0.html"/>
-				<metadata-artifact status="no" details="" size="2649" time="0" location="/home/wdd/.ivy2/cache/com.typesafe.play/build-link/ivy-2.6.11.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/typesafe/play/build-link/2.6.11/build-link-2.6.11.pom"/>
+				<metadata-artifact status="successful" details="" size="1499" time="111" location="/home/wdd/.ivy2/cache/com.typesafe.play/build-link/ivy-2.6.11.xml" searched="true" original-local-location="/home/wdd/.ivy2/cache/com.typesafe.play/build-link/ivy-2.6.11.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/typesafe/play/build-link/2.6.11/build-link-2.6.11.pom"/>
 				<caller organisation="com.typesafe.play" name="run-support_2.12" conf="default, compile, runtime, master" rev="2.6.11" rev-constraint-default="2.6.11" rev-constraint-dynamic="2.6.11" callerrev="2.6.11"/>
 				<artifacts>
-					<artifact name="build-link" type="jar" ext="jar" status="no" details="" size="3410" time="0" location="/home/wdd/.ivy2/cache/com.typesafe.play/build-link/jars/build-link-2.6.11.jar">
+					<artifact name="build-link" type="jar" ext="jar" status="successful" details="" size="3410" time="69" location="/home/wdd/.ivy2/cache/com.typesafe.play/build-link/jars/build-link-2.6.11.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/play/build-link/2.6.11/build-link-2.6.11.jar"/>
 					</artifact>
 				</artifacts>
 			</revision>
 		</module>
 		<module organisation="com.typesafe.play" name="play-exceptions">
-			<revision name="2.6.11" status="release" pubdate="20180111201423" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://playframework.com" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="9">
+			<revision name="2.6.11" status="release" pubdate="20180111201423" resolver="public" artresolver="public" homepage="https://playframework.com" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="9">
 				<license name="Apache-2.0" url="http://www.apache.org/licenses/LICENSE-2.0.html"/>
-				<metadata-artifact status="no" details="" size="2479" time="0" location="/home/wdd/.ivy2/cache/com.typesafe.play/play-exceptions/ivy-2.6.11.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/typesafe/play/play-exceptions/2.6.11/play-exceptions-2.6.11.pom"/>
+				<metadata-artifact status="successful" details="" size="1292" time="63" location="/home/wdd/.ivy2/cache/com.typesafe.play/play-exceptions/ivy-2.6.11.xml" searched="true" original-local-location="/home/wdd/.ivy2/cache/com.typesafe.play/play-exceptions/ivy-2.6.11.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/typesafe/play/play-exceptions/2.6.11/play-exceptions-2.6.11.pom"/>
 				<caller organisation="com.typesafe.play" name="build-link" conf="compile, runtime" rev="2.6.11" rev-constraint-default="2.6.11" rev-constraint-dynamic="2.6.11" callerrev="2.6.11"/>
 				<artifacts>
-					<artifact name="play-exceptions" type="jar" ext="jar" status="no" details="" size="4793" time="0" location="/home/wdd/.ivy2/cache/com.typesafe.play/play-exceptions/jars/play-exceptions-2.6.11.jar">
+					<artifact name="play-exceptions" type="jar" ext="jar" status="successful" details="" size="4793" time="79" location="/home/wdd/.ivy2/cache/com.typesafe.play/play-exceptions/jars/play-exceptions-2.6.11.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/play/play-exceptions/2.6.11/play-exceptions-2.6.11.jar"/>
 					</artifact>
 				</artifacts>
 			</revision>
 		</module>
 		<module organisation="com.typesafe.play" name="sbt-routes-compiler_2.12">
-			<revision name="2.6.11" status="release" pubdate="20180111201439" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://playframework.com" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="1">
+			<revision name="2.6.11" status="release" pubdate="20180111201439" resolver="public" artresolver="public" homepage="https://playframework.com" downloaded="true" searched="true" default="false" conf="default, compile, runtime, default(compile), master" position="1">
 				<license name="Apache-2.0" url="http://www.apache.org/licenses/LICENSE-2.0.html"/>
-				<metadata-artifact status="no" details="" size="3762" time="0" location="/home/wdd/.ivy2/cache/com.typesafe.play/sbt-routes-compiler_2.12/ivy-2.6.11.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/typesafe/play/sbt-routes-compiler_2.12/2.6.11/sbt-routes-compiler_2.12-2.6.11.pom"/>
+				<metadata-artifact status="successful" details="" size="3130" time="67" location="/home/wdd/.ivy2/cache/com.typesafe.play/sbt-routes-compiler_2.12/ivy-2.6.11.xml" searched="true" original-local-location="/home/wdd/.ivy2/cache/com.typesafe.play/sbt-routes-compiler_2.12/ivy-2.6.11.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/typesafe/play/sbt-routes-compiler_2.12/2.6.11/sbt-routes-compiler_2.12-2.6.11.pom"/>
 				<caller organisation="com.typesafe.play" name="sbt-plugin" conf="compile" rev="2.6.11" rev-constraint-default="2.6.11" rev-constraint-dynamic="2.6.11" callerrev="2.6.11"/>
 				<artifacts>
-					<artifact name="sbt-routes-compiler_2.12" type="jar" ext="jar" status="no" details="" size="208261" time="0" location="/home/wdd/.ivy2/cache/com.typesafe.play/sbt-routes-compiler_2.12/jars/sbt-routes-compiler_2.12-2.6.11.jar">
+					<artifact name="sbt-routes-compiler_2.12" type="jar" ext="jar" status="successful" details="" size="208261" time="105" location="/home/wdd/.ivy2/cache/com.typesafe.play/sbt-routes-compiler_2.12/jars/sbt-routes-compiler_2.12-2.6.11.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/play/sbt-routes-compiler_2.12/2.6.11/sbt-routes-compiler_2.12-2.6.11.jar"/>
 					</artifact>
 				</artifacts>
@@ -2140,13 +2140,13 @@
 			</revision>
 		</module>
 		<module organisation="com.typesafe.play" name="twirl-api_2.12">
-			<revision name="1.3.12" status="release" pubdate="20170929195859" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/playframework/twirl" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="3">
+			<revision name="1.3.12" status="release" pubdate="20170929195859" resolver="public" artresolver="public" homepage="https://github.com/playframework/twirl" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="3">
 				<license name="Apache-2.0" url="http://www.apache.org/licenses/LICENSE-2.0.html"/>
-				<metadata-artifact status="no" details="" size="2942" time="0" location="/home/wdd/.ivy2/cache/com.typesafe.play/twirl-api_2.12/ivy-1.3.12.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/typesafe/play/twirl-api_2.12/1.3.12/twirl-api_2.12-1.3.12.pom"/>
+				<metadata-artifact status="successful" details="" size="1901" time="95" location="/home/wdd/.ivy2/cache/com.typesafe.play/twirl-api_2.12/ivy-1.3.12.xml" searched="true" original-local-location="/home/wdd/.ivy2/cache/com.typesafe.play/twirl-api_2.12/ivy-1.3.12.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/typesafe/play/twirl-api_2.12/1.3.12/twirl-api_2.12-1.3.12.pom"/>
 				<caller organisation="com.typesafe.play" name="sbt-routes-compiler_2.12" conf="default, compile, runtime, master" rev="1.3.12" rev-constraint-default="1.3.12" rev-constraint-dynamic="1.3.12" callerrev="2.6.11"/>
 				<caller organisation="com.typesafe.play" name="twirl-compiler_2.12" conf="default, compile, runtime, master" rev="1.3.12" rev-constraint-default="1.3.12" rev-constraint-dynamic="1.3.12" callerrev="1.3.12"/>
 				<artifacts>
-					<artifact name="twirl-api_2.12" type="jar" ext="jar" status="no" details="" size="76119" time="0" location="/home/wdd/.ivy2/cache/com.typesafe.play/twirl-api_2.12/jars/twirl-api_2.12-1.3.12.jar">
+					<artifact name="twirl-api_2.12" type="jar" ext="jar" status="successful" details="" size="76119" time="2126" location="/home/wdd/.ivy2/cache/com.typesafe.play/twirl-api_2.12/jars/twirl-api_2.12-1.3.12.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/play/twirl-api_2.12/1.3.12/twirl-api_2.12-1.3.12.jar"/>
 					</artifact>
 				</artifacts>

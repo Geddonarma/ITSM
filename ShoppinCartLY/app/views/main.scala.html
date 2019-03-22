@@ -46,6 +46,8 @@
   background-color: #ddd;
 }
 
+
+
   </style>
 
 <head>
@@ -94,9 +96,13 @@
                         <a href="@routes.ProductCtrl.contact">Contact us</a>
                     </li>
                 </li>
+
                 <li @if(title=="Signup" ){class="active"}>
                     <a href="@routes.ProductCtrl.signup">Sign Up</a>
-                </li>
+                </li> 
+
+
+
                 <li @if(title=="Login"){class="active"}>
                     @if(user != null) {
                         <a href="@controllers.security.routes.LoginCtrl.logout()">Logout @user.getName()</a>
