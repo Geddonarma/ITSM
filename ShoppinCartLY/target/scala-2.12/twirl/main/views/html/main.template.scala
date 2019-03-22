@@ -37,41 +37,56 @@ Seq[Any](format.raw/*1.58*/("""
 <html lang="en">
 <style>
 .dropdown """),format.raw/*7.11*/("""{"""),format.raw/*7.12*/("""
-  """),format.raw/*8.3*/("""position: relative;
-  display: inline-block;
+  """),format.raw/*8.3*/("""float: left;
+  overflow: hidden;
 """),format.raw/*10.1*/("""}"""),format.raw/*10.2*/("""
 
-"""),format.raw/*12.1*/(""".dropdown-content """),format.raw/*12.19*/("""{"""),format.raw/*12.20*/("""
-  """),format.raw/*13.3*/("""display: none;
+"""),format.raw/*12.1*/(""".dropdown .dropbtn """),format.raw/*12.20*/("""{"""),format.raw/*12.21*/("""
+  """),format.raw/*13.3*/("""font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+"""),format.raw/*21.1*/("""}"""),format.raw/*21.2*/("""
+
+"""),format.raw/*23.1*/(""".navbar a:hover, .dropdown:hover .dropbtn """),format.raw/*23.43*/("""{"""),format.raw/*23.44*/("""
+  """),format.raw/*24.3*/("""background-color: red;
+"""),format.raw/*25.1*/("""}"""),format.raw/*25.2*/("""
+
+"""),format.raw/*27.1*/(""".dropdown-content """),format.raw/*27.19*/("""{"""),format.raw/*27.20*/("""
+  """),format.raw/*28.3*/("""display: none;
   position: absolute;
-  background-color: #f1f1f1;
+  background-color: #f9f9f9;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
-"""),format.raw/*19.1*/("""}"""),format.raw/*19.2*/("""
+"""),format.raw/*34.1*/("""}"""),format.raw/*34.2*/("""
 
-"""),format.raw/*21.1*/(""".dropdown-content a """),format.raw/*21.21*/("""{"""),format.raw/*21.22*/("""
-  """),format.raw/*22.3*/("""color: black;
+"""),format.raw/*36.1*/(""".dropdown-content a """),format.raw/*36.21*/("""{"""),format.raw/*36.22*/("""
+  """),format.raw/*37.3*/("""float: none;
+  color: black;
   padding: 12px 16px;
   text-decoration: none;
   display: block;
+  text-align: left;
+"""),format.raw/*43.1*/("""}"""),format.raw/*43.2*/("""
 
-"""),format.raw/*27.1*/("""}"""),format.raw/*27.2*/(""" 
-"""),format.raw/*28.1*/(""".dropdown-content a:hover """),format.raw/*28.27*/("""{"""),format.raw/*28.28*/("""background-color: #ddd;"""),format.raw/*28.51*/("""}"""),format.raw/*28.52*/("""
+"""),format.raw/*45.1*/(""".dropdown-content a:hover """),format.raw/*45.27*/("""{"""),format.raw/*45.28*/("""
+  """),format.raw/*46.3*/("""background-color: #ddd;
+"""),format.raw/*47.1*/("""}"""),format.raw/*47.2*/("""
 
-"""),format.raw/*30.1*/(""".dropdown:hover .dropdown-content """),format.raw/*30.35*/("""{"""),format.raw/*30.36*/("""display: block;"""),format.raw/*30.51*/("""}"""),format.raw/*30.52*/("""
-
-"""),format.raw/*32.1*/(""".dropdown:hover .dropbtn """),format.raw/*32.26*/("""{"""),format.raw/*32.27*/("""background-color: #3e8e41;"""),format.raw/*32.53*/("""}"""),format.raw/*32.54*/("""
-
-  """),format.raw/*34.3*/("""</style>
+  """),format.raw/*49.3*/("""</style>
 
 <head>
     <meta charset="utf-8">
-    <title>Online store - """),_display_(/*38.28*/title),format.raw/*38.33*/("""</title>
+    <title>Online store - """),_display_(/*53.28*/title),format.raw/*53.33*/("""</title>
     <!-- Bootstrap Core CSS -->
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.css" rel="stylesheet" />
     <!-- Custom CSS -->
-    <link href=""""),_display_(/*42.18*/routes/*42.24*/.Assets.versioned("stylesheets/main.css")),format.raw/*42.65*/("""" rel="stylesheet" />
+    <link href=""""),_display_(/*57.18*/routes/*57.24*/.Assets.versioned("stylesheets/main.css")),format.raw/*57.65*/("""" rel="stylesheet" />
 </head>
 
 <body>
@@ -84,43 +99,46 @@ Seq[Any](format.raw/*1.58*/("""
 
             <ul class="nav navbar-nav">
 
-                <li """),_display_(/*55.22*/if(title=="Online store" )/*55.48*/{_display_(Seq[Any](format.raw/*55.49*/("""class="active"""")))}),format.raw/*55.64*/(""">
-                     <a class="navbar-brand" href=""""),_display_(/*56.53*/routes/*56.59*/.ProductCtrl.listProducts(0)),format.raw/*56.87*/("""">Online Store</a>
+                <li """),_display_(/*70.22*/if(title=="Online store" )/*70.48*/{_display_(Seq[Any](format.raw/*70.49*/("""class="active"""")))}),format.raw/*70.64*/(""">
+                     <a class="navbar-brand" href=""""),_display_(/*71.53*/routes/*71.59*/.ProductCtrl.listProducts(0)),format.raw/*71.87*/("""">Online Store</a>
                 </li>  
 
-                <li """),_display_(/*59.22*/if(title=="Products" )/*59.44*/{_display_(Seq[Any](format.raw/*59.45*/("""class="active"""")))}),format.raw/*59.60*/(""">
-                 <a class="navbar-brand" href=""""),_display_(/*60.49*/routes/*60.55*/.ProductCtrl.listProducts(0)),format.raw/*60.83*/("""">home</a>
+                <li """),_display_(/*74.22*/if(title=="Products" )/*74.44*/{_display_(Seq[Any](format.raw/*74.45*/("""class="active"""")))}),format.raw/*74.60*/(""">
+                 <a class="navbar-brand" href=""""),_display_(/*75.49*/routes/*75.55*/.ProductCtrl.listProducts(0)),format.raw/*75.83*/("""">home</a>
                 </li>
 
                 <div class="dropdown">
-                    <button class="dropbtn">Menu</button>
+                    <button class="dropbtn">DropDown Menu</button>
                     <div class="dropdown-content">
-                      <a href=""""),_display_(/*66.33*/routes/*66.39*/.ProductCtrl.listProducts(0)),format.raw/*66.67*/("""">Search for Products</a>
-                      <a href=""""),_display_(/*67.33*/routes/*67.39*/.ProductCtrl.about),format.raw/*67.57*/("""">About Us</a>
-                      <a href=""""),_display_(/*68.33*/routes/*68.39*/.ProductCtrl.contact),format.raw/*68.59*/("""">Contact Us</a>
+                      <a href=""""),_display_(/*81.33*/routes/*81.39*/.ProductCtrl.listProducts(0)),format.raw/*81.67*/("""">Search for Products</a>
+                      <a href=""""),_display_(/*82.33*/routes/*82.39*/.ProductCtrl.about),format.raw/*82.57*/("""">About Us</a>
+                      <a href=""""),_display_(/*83.33*/routes/*83.39*/.ProductCtrl.contact),format.raw/*83.59*/("""">Contact Us</a>
                       
                     </div>
                   </div>
 
-                <li """),_display_(/*73.22*/if(title=="About" )/*73.41*/{_display_(Seq[Any](format.raw/*73.42*/("""class="active"""")))}),format.raw/*73.57*/(""">
-                    <a href=""""),_display_(/*74.31*/routes/*74.37*/.ProductCtrl.about),format.raw/*74.55*/("""">About us</a>
+                <li """),_display_(/*88.22*/if(title=="About" )/*88.41*/{_display_(Seq[Any](format.raw/*88.42*/("""class="active"""")))}),format.raw/*88.57*/(""">
+                    <a href=""""),_display_(/*89.31*/routes/*89.37*/.ProductCtrl.about),format.raw/*89.55*/("""">About us</a>
                 </li>
 
                 <li>
-                    <li """),_display_(/*78.26*/if(title=="Contact" )/*78.47*/{_display_(Seq[Any](format.raw/*78.48*/("""class="active"""")))}),format.raw/*78.63*/(""">
-                        <a href=""""),_display_(/*79.35*/routes/*79.41*/.ProductCtrl.contact),format.raw/*79.61*/("""">Contact us</a>
+                    <li """),_display_(/*93.26*/if(title=="Contact" )/*93.47*/{_display_(Seq[Any](format.raw/*93.48*/("""class="active"""")))}),format.raw/*93.63*/(""">
+                        <a href=""""),_display_(/*94.35*/routes/*94.41*/.ProductCtrl.contact),format.raw/*94.61*/("""">Contact us</a>
                     </li>
                 </li>
-                <li """),_display_(/*82.22*/if(title=="Login")/*82.40*/{_display_(Seq[Any](format.raw/*82.41*/("""class="active"""")))}),format.raw/*82.56*/(""">
-                    """),_display_(/*83.22*/if(user != null)/*83.38*/ {_display_(Seq[Any](format.raw/*83.40*/("""
-                        """),format.raw/*84.25*/("""<a href=""""),_display_(/*84.35*/controllers/*84.46*/.security.routes.LoginCtrl.logout()),format.raw/*84.81*/("""">Logout """),_display_(/*84.91*/user/*84.95*/.getName()),format.raw/*84.105*/("""</a>
-                    """)))}/*85.23*/else/*85.28*/{_display_(Seq[Any](format.raw/*85.29*/("""
-                        """),format.raw/*86.25*/("""<a href=""""),_display_(/*86.35*/controllers/*86.46*/.security.routes.LoginCtrl.login()),format.raw/*86.80*/("""">Login</a>
-                    """)))}),format.raw/*87.22*/("""
+                <li """),_display_(/*97.22*/if(title=="Signup" )/*97.42*/{_display_(Seq[Any](format.raw/*97.43*/("""class="active"""")))}),format.raw/*97.58*/(""">
+                    <a href=""""),_display_(/*98.31*/routes/*98.37*/.ProductCtrl.signup),format.raw/*98.56*/("""">Sign Up</a>
+                </li>
+                <li """),_display_(/*100.22*/if(title=="Login")/*100.40*/{_display_(Seq[Any](format.raw/*100.41*/("""class="active"""")))}),format.raw/*100.56*/(""">
+                    """),_display_(/*101.22*/if(user != null)/*101.38*/ {_display_(Seq[Any](format.raw/*101.40*/("""
+                        """),format.raw/*102.25*/("""<a href=""""),_display_(/*102.35*/controllers/*102.46*/.security.routes.LoginCtrl.logout()),format.raw/*102.81*/("""">Logout """),_display_(/*102.91*/user/*102.95*/.getName()),format.raw/*102.105*/("""</a>
+                    """)))}/*103.23*/else/*103.28*/{_display_(Seq[Any](format.raw/*103.29*/("""
+                        """),format.raw/*104.25*/("""<a href=""""),_display_(/*104.35*/controllers/*104.46*/.security.routes.LoginCtrl.login()),format.raw/*104.80*/("""">Login</a>
+                    """)))}),format.raw/*105.22*/("""
 
-                """),format.raw/*89.17*/("""</li>
+                """),format.raw/*107.17*/("""</li>
                 <li>
-                    <a href=""""),_display_(/*91.31*/routes/*91.37*/.ShoppingCtrl.viewOrders),format.raw/*91.61*/("""">View Orders</a>
+                    <a href=""""),_display_(/*109.31*/routes/*109.37*/.ShoppingCtrl.viewOrders),format.raw/*109.61*/("""">View Orders</a>
                 </li>
             </ul>
 
@@ -131,8 +149,8 @@ Seq[Any](format.raw/*1.58*/("""
     <container>
         <row>
             <div class="col-md-12">
-                """),_display_(/*102.18*/content),format.raw/*102.25*/("""
-            """),format.raw/*103.13*/("""</div>
+                """),_display_(/*120.18*/content),format.raw/*120.25*/("""
+            """),format.raw/*121.13*/("""</div>
         </row>
     </container>
 <br>
@@ -146,7 +164,7 @@ Seq[Any](format.raw/*1.58*/("""
         </row>
     </footer>
     </container>
-    <script src=""""),_display_(/*117.19*/routes/*117.25*/.Assets.versioned("javascripts/main.js")),format.raw/*117.65*/(""""></script>
+    <script src=""""),_display_(/*135.19*/routes/*135.25*/.Assets.versioned("javascripts/main.js")),format.raw/*135.65*/(""""></script>
 </body>
 
 </html>"""))
@@ -165,11 +183,11 @@ Seq[Any](format.raw/*1.58*/("""
 
               /*
                   -- GENERATED --
-                  DATE: Thu Mar 14 13:28:37 GMT 2019
+                  DATE: Fri Mar 22 11:13:02 GMT 2019
                   SOURCE: /home/wdd/Desktop/ITSM/ShoppinCartLY/app/views/main.scala.html
-                  HASH: 0b527164a90d5f94d3c2e7f6bc5c390d794ef241
-                  MATRIX: 970->1|1121->57|1149->59|1228->111|1256->112|1285->115|1357->160|1385->161|1414->163|1460->181|1489->182|1519->185|1694->333|1722->334|1751->336|1799->356|1828->357|1858->360|1965->440|1993->441|2022->443|2076->469|2105->470|2156->493|2185->494|2214->496|2276->530|2305->531|2348->546|2377->547|2406->549|2459->574|2488->575|2542->601|2571->602|2602->606|2700->677|2726->682|2938->867|2953->873|3015->914|3301->1173|3336->1199|3375->1200|3421->1215|3502->1269|3517->1275|3566->1303|3658->1368|3689->1390|3728->1391|3774->1406|3851->1456|3866->1462|3915->1490|4156->1704|4171->1710|4220->1738|4305->1796|4320->1802|4359->1820|4433->1867|4448->1873|4489->1893|4630->2007|4658->2026|4697->2027|4743->2042|4802->2074|4817->2080|4856->2098|4967->2182|4997->2203|5036->2204|5082->2219|5145->2255|5160->2261|5201->2281|5314->2367|5341->2385|5380->2386|5426->2401|5476->2424|5501->2440|5541->2442|5594->2467|5631->2477|5651->2488|5707->2523|5744->2533|5757->2537|5789->2547|5834->2574|5847->2579|5886->2580|5939->2605|5976->2615|5996->2626|6051->2660|6115->2693|6161->2711|6245->2768|6260->2774|6305->2798|6503->2968|6532->2975|6574->2988|6893->3279|6909->3285|6971->3325
-                  LINES: 28->1|33->1|35->3|39->7|39->7|40->8|42->10|42->10|44->12|44->12|44->12|45->13|51->19|51->19|53->21|53->21|53->21|54->22|59->27|59->27|60->28|60->28|60->28|60->28|60->28|62->30|62->30|62->30|62->30|62->30|64->32|64->32|64->32|64->32|64->32|66->34|70->38|70->38|74->42|74->42|74->42|87->55|87->55|87->55|87->55|88->56|88->56|88->56|91->59|91->59|91->59|91->59|92->60|92->60|92->60|98->66|98->66|98->66|99->67|99->67|99->67|100->68|100->68|100->68|105->73|105->73|105->73|105->73|106->74|106->74|106->74|110->78|110->78|110->78|110->78|111->79|111->79|111->79|114->82|114->82|114->82|114->82|115->83|115->83|115->83|116->84|116->84|116->84|116->84|116->84|116->84|116->84|117->85|117->85|117->85|118->86|118->86|118->86|118->86|119->87|121->89|123->91|123->91|123->91|134->102|134->102|135->103|149->117|149->117|149->117
+                  HASH: 97d818fc65805f784cad77ed99506d5447379f13
+                  MATRIX: 970->1|1121->57|1149->59|1228->111|1256->112|1285->115|1345->148|1373->149|1402->151|1449->170|1478->171|1508->174|1691->330|1719->331|1748->333|1818->375|1847->376|1877->379|1927->402|1955->403|1984->405|2030->423|2059->424|2089->427|2264->575|2292->576|2321->578|2369->598|2398->599|2428->602|2569->716|2597->717|2626->719|2680->745|2709->746|2739->749|2790->773|2818->774|2849->778|2947->849|2973->854|3185->1039|3200->1045|3262->1086|3548->1345|3583->1371|3622->1372|3668->1387|3749->1441|3764->1447|3813->1475|3905->1540|3936->1562|3975->1563|4021->1578|4098->1628|4113->1634|4162->1662|4412->1885|4427->1891|4476->1919|4561->1977|4576->1983|4615->2001|4689->2048|4704->2054|4745->2074|4886->2188|4914->2207|4953->2208|4999->2223|5058->2255|5073->2261|5112->2279|5223->2363|5253->2384|5292->2385|5338->2400|5401->2436|5416->2442|5457->2462|5570->2548|5599->2568|5638->2569|5684->2584|5743->2616|5758->2622|5798->2641|5883->2698|5911->2716|5951->2717|5998->2732|6049->2755|6075->2771|6116->2773|6170->2798|6208->2808|6229->2819|6286->2854|6324->2864|6338->2868|6371->2878|6417->2905|6431->2910|6471->2911|6525->2936|6563->2946|6584->2957|6640->2991|6705->3024|6752->3042|6837->3099|6853->3105|6899->3129|7097->3299|7126->3306|7168->3319|7487->3610|7503->3616|7565->3656
+                  LINES: 28->1|33->1|35->3|39->7|39->7|40->8|42->10|42->10|44->12|44->12|44->12|45->13|53->21|53->21|55->23|55->23|55->23|56->24|57->25|57->25|59->27|59->27|59->27|60->28|66->34|66->34|68->36|68->36|68->36|69->37|75->43|75->43|77->45|77->45|77->45|78->46|79->47|79->47|81->49|85->53|85->53|89->57|89->57|89->57|102->70|102->70|102->70|102->70|103->71|103->71|103->71|106->74|106->74|106->74|106->74|107->75|107->75|107->75|113->81|113->81|113->81|114->82|114->82|114->82|115->83|115->83|115->83|120->88|120->88|120->88|120->88|121->89|121->89|121->89|125->93|125->93|125->93|125->93|126->94|126->94|126->94|129->97|129->97|129->97|129->97|130->98|130->98|130->98|132->100|132->100|132->100|132->100|133->101|133->101|133->101|134->102|134->102|134->102|134->102|134->102|134->102|134->102|135->103|135->103|135->103|136->104|136->104|136->104|136->104|137->105|139->107|141->109|141->109|141->109|152->120|152->120|153->121|167->135|167->135|167->135
                   -- GENERATED --
               */
           

@@ -55,6 +55,9 @@ public class ProductCtrl extends Controller {
     public Result contact() {
         return ok(contact.render(User.getLoggedIn(session().get("email"))));
     }
+    public Result signup() {
+        return ok(signup.render(User.getLoggedIn(session().get("email"))));
+    }
     // Get a list of products
     // If cat parameter is 0 then return all products
     // Otherwise return products for a category (by id)
