@@ -1,38 +1,12 @@
-2019-03-22 11:38:52,716 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-6 - Creating Pool for datasource 'default'
-2019-03-22 11:38:53,609 [INFO] from play.api.db.DefaultDBApi in play-dev-mode-akka.actor.default-dispatcher-6 - Database [default] connected at jdbc:h2:file:./data/productsDB
-2019-03-22 11:38:56,070 [WARN] from org.hibernate.validator.messageinterpolation.ParameterMessageInterpolator in play-dev-mode-akka.actor.default-dispatcher-6 - HV000184: ParameterMessageInterpolator has been chosen, EL interpolation will not be supported
-2019-03-22 11:38:56,427 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-6 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+2019-03-22 13:54:30,360 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-3 - Creating Pool for datasource 'default'
+2019-03-22 13:54:30,849 [INFO] from play.api.db.DefaultDBApi in play-dev-mode-akka.actor.default-dispatcher-3 - Database [default] connected at jdbc:h2:file:./data/productsDB
+2019-03-22 13:54:32,743 [WARN] from org.hibernate.validator.messageinterpolation.ParameterMessageInterpolator in play-dev-mode-akka.actor.default-dispatcher-3 - HV000184: ParameterMessageInterpolator has been chosen, EL interpolation will not be supported
+2019-03-22 13:54:33,070 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-3 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
 
     play.filters.csrf.CSRFFilter
     play.filters.headers.SecurityHeadersFilter
     play.filters.hosts.AllowedHostsFilter
 
-2019-03-22 11:38:56,435 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-6 - Application started (Dev)
-2019-03-22 12:07:06,180 [INFO] from application in application-akka.actor.default-dispatcher-15 - Shutting down connection pool.
-2019-03-22 12:07:06,560 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-36 - Creating Pool for datasource 'default'
-2019-03-22 12:07:06,616 [INFO] from play.api.db.DefaultDBApi in play-dev-mode-akka.actor.default-dispatcher-36 - Database [default] connected at jdbc:h2:file:./data/productsDB
-2019-03-22 12:07:07,202 [WARN] from org.hibernate.validator.messageinterpolation.ParameterMessageInterpolator in play-dev-mode-akka.actor.default-dispatcher-36 - HV000184: ParameterMessageInterpolator has been chosen, EL interpolation will not be supported
-2019-03-22 12:07:07,328 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-36 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
-
-    play.filters.csrf.CSRFFilter
-    play.filters.headers.SecurityHeadersFilter
-    play.filters.hosts.AllowedHostsFilter
-
-2019-03-22 12:07:07,331 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-36 - Application started (Dev)
-2019-03-22 12:07:17,169 [WARN] from play.filters.CSRF in play-dev-mode-akka.actor.default-dispatcher-35 - [CSRF] Check failed because no or invalid token found in body for /main.scala.html
-2019-03-22 12:07:17,173 [WARN] from play.filters.CSRF in play-dev-mode-akka.actor.default-dispatcher-35 - [CSRF] Check failed with NoTokenInBody for /main.scala.html
-2019-03-22 12:07:50,598 [INFO] from application in application-akka.actor.default-dispatcher-9 - Shutting down connection pool.
-2019-03-22 12:07:50,891 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-39 - Creating Pool for datasource 'default'
-2019-03-22 12:07:50,927 [INFO] from play.api.db.DefaultDBApi in play-dev-mode-akka.actor.default-dispatcher-39 - Database [default] connected at jdbc:h2:file:./data/productsDB
-2019-03-22 12:07:51,398 [WARN] from org.hibernate.validator.messageinterpolation.ParameterMessageInterpolator in play-dev-mode-akka.actor.default-dispatcher-39 - HV000184: ParameterMessageInterpolator has been chosen, EL interpolation will not be supported
-2019-03-22 12:07:51,634 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-39 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
-
-    play.filters.csrf.CSRFFilter
-    play.filters.headers.SecurityHeadersFilter
-    play.filters.hosts.AllowedHostsFilter
-
-2019-03-22 12:07:51,636 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-39 - Application started (Dev)
-2019-03-22 12:07:57,737 [WARN] from play.filters.CSRF in play-dev-mode-akka.actor.default-dispatcher-36 - [CSRF] Check failed because no or invalid token found in body for /main.scala.html
-2019-03-22 12:07:57,737 [WARN] from play.filters.CSRF in play-dev-mode-akka.actor.default-dispatcher-36 - [CSRF] Check failed with NoTokenInBody for /main.scala.html
-2019-03-22 12:08:08,317 [INFO] from play.core.server.AkkaHttpServer in pool-5-thread-4 - Stopping server...
-2019-03-22 12:08:08,341 [INFO] from application in application-akka.actor.default-dispatcher-2 - Shutting down connection pool.
+2019-03-22 13:54:33,083 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-3 - Application started (Dev)
+2019-03-22 13:54:55,647 [INFO] from play.core.server.AkkaHttpServer in pool-5-thread-3 - Stopping server...
+2019-03-22 13:54:55,709 [INFO] from application in application-akka.actor.default-dispatcher-2 - Shutting down connection pool.
