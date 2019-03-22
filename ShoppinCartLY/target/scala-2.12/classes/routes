@@ -14,7 +14,8 @@ GET     /productDetails/:id                 controllers.ProductCtrl.productDetai
 GET		/about						        controllers.ProductCtrl.about
 GET		/contact						    controllers.ProductCtrl.contact
 
-GET		/signup						        controllers.ProductCtrl.signup
+GET		/signup						        controllers.security.LoginCtrl.signup()
+POST    /signupSubmit                       controllers.security.LoginCtrl.signupSubmit()
 
 # Login form
 GET		/login						        controllers.security.LoginCtrl.login()
@@ -28,7 +29,7 @@ GET     /addOne/:itemId                     controllers.ShoppingCtrl.addOne(item
 GET     /removeOne/:itemId                  controllers.ShoppingCtrl.removeOne(itemId: Long)
 GET     /emptyBasket                        controllers.ShoppingCtrl.emptyBasket()
 GET     /placeOrder                         controllers.ShoppingCtrl.placeOrder()
-GET     /cancelOrder                         controllers.ShoppingCtrl.cancelOrder(id: Long)
+GET     /cancelOrder                        controllers.ShoppingCtrl.cancelOrder(id: Long)
 GET     /viewOrders                         controllers.ShoppingCtrl.viewOrders()
 
 

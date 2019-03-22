@@ -20,7 +20,6 @@ public class User extends Model {
     @Id
     private String email;
 
-    @Constraints.Required
     private String role;    
 
     @Constraints.Required

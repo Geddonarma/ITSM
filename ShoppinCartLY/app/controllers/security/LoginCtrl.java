@@ -29,23 +29,18 @@ public class LoginCtrl extends Controller {
     }
 
     public Result loginSubmit() {
-        // Bind form instance to the values submitted from the form  
+          
         Form<Login> loginForm = formFactory.form(Login.class).bindFromRequest();
 
-        // Check for errors
-        // Uses the validate method defined in the Login class
         if (loginForm.hasErrors()) {
-            // If errors, show the form again
+            
             return badRequest(login.render(loginForm, User.getLoggedIn(session().get("email"))));
         } 
         else {
-            // User Logged in successfully
-            // Clear the existing session
+          
             session().clear();
-            // Store the logged in email in the session
             session("email", loginForm.get().getEmail());
-            
-            // Check user type
+        
             User u = User.getLoggedIn(loginForm.get().getEmail());
             // If admin - go to admin section
             if (u != null && "admin".equals(u.getRole())) {
@@ -63,6 +58,39 @@ public class LoginCtrl extends Controller {
         return redirect(controllers.security.routes.LoginCtrl.login());
     }
 
+
+
+    public Result signup() {
+        Form<User> signupForm = formFactory.form(User.class);
+        return ok(signup.render(signupForm,User.getLoggedIn(session().get("email"))));
+    }
+    
+    public Result signupSubmit() {
+    
+        Form<User> signupForm = formFactory.form(User.class).bindFromRequest();
+    
+        if (signupForm.hasErrors()) {
+    
+            return badRequest(signup.render(signupForm,User.getLoggedIn(session().get("email"))));
+        } else {
+    
+            User  signup = signupForm.get();
+             
+        
+            if(User.getLoggedIn(signup.getEmail())==null){
+                signup.save();
+            }else{
+                signup.update();
+            }
+    
+        flash("success", "User " + signup.getName() + " was registered.");
+    
+        return redirect(routes.LoginCtrl.login()); 
+        }
+    }
+    
+    
+    
+    }
         
     
-}

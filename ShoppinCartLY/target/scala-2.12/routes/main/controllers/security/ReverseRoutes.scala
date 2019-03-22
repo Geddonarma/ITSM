@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
 // @SOURCE:/home/wdd/Desktop/ITSM/ShoppinCartLY/conf/routes
-// @DATE:Fri Mar 22 11:01:05 GMT 2019
+// @DATE:Fri Mar 22 16:10:42 GMT 2019
 
 import play.api.mvc.Call
 
@@ -9,29 +9,41 @@ import play.api.mvc.Call
 import _root_.controllers.Assets.Asset
 import _root_.play.libs.F
 
-// @LINE:20
+// @LINE:17
 package controllers.security {
 
-  // @LINE:20
+  // @LINE:17
   class ReverseLoginCtrl(_prefix: => String) {
     def _defaultPrefix: String = {
       if (_prefix.endsWith("/")) "" else "/"
     }
 
   
-    // @LINE:21
+    // @LINE:22
     def loginSubmit(): Call = {
       
       Call("POST", _prefix + { _defaultPrefix } + "login")
     }
   
-    // @LINE:22
+    // @LINE:17
+    def signup(): Call = {
+      
+      Call("GET", _prefix + { _defaultPrefix } + "signup")
+    }
+  
+    // @LINE:23
     def logout(): Call = {
       
       Call("GET", _prefix + { _defaultPrefix } + "logout")
     }
   
-    // @LINE:20
+    // @LINE:18
+    def signupSubmit(): Call = {
+      
+      Call("POST", _prefix + { _defaultPrefix } + "signupSubmit")
+    }
+  
+    // @LINE:21
     def login(): Call = {
       
       Call("GET", _prefix + { _defaultPrefix } + "login")

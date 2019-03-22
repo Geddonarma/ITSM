@@ -1,7 +1,4 @@
-[0m[[0m[31merror[0m] [0m[0m/home/wdd/Desktop/ITSM/ShoppinCartLY/app/views/signup.scala.html:3:3: not found: value loginForm[0m
-[0m[[0m[31merror[0m] [0m[0m@(loginForm: Form[Login], user: User)[0m
-[0m[[0m[31merror[0m] [0m[0m  ^[0m
-[0m[[0m[31merror[0m] [0m[0m/home/wdd/Desktop/ITSM/ShoppinCartLY/app/views/signup.scala.html:3:33: not found: type User[0m
-[0m[[0m[31merror[0m] [0m[0m@(loginForm: Form[Login], user: User)[0m
-[0m[[0m[31merror[0m] [0m[0m                                ^[0m
-[0m[[0m[31merror[0m] [0m[0mtwo errors found[0m
+[0m[[0m[31merror[0m] [0m[0m/home/wdd/Desktop/ITSM/ShoppinCartLY/app/controllers/security/LoginCtrl.java:88:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   variable LoginCtr[0m
+[0m[[0m[31merror[0m] [0m[0m  location: class controllers.security.routes[0m
+[0m[[0m[31merror[0m] [0m[0m        return redirect(routes.LoginCtr.login()); [0m

@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
 // @SOURCE:/home/wdd/Desktop/ITSM/ShoppinCartLY/conf/routes
-// @DATE:Fri Mar 22 11:01:05 GMT 2019
+// @DATE:Fri Mar 22 16:10:42 GMT 2019
 
 import play.api.routing.JavaScriptReverseRoute
 
@@ -9,10 +9,10 @@ import play.api.routing.JavaScriptReverseRoute
 import _root_.controllers.Assets.Asset
 import _root_.play.libs.F
 
-// @LINE:20
+// @LINE:17
 package controllers.security.javascript {
 
-  // @LINE:20
+  // @LINE:17
   class ReverseLoginCtrl(_prefix: => String) {
 
     def _defaultPrefix: String = {
@@ -20,7 +20,7 @@ package controllers.security.javascript {
     }
 
   
-    // @LINE:21
+    // @LINE:22
     def loginSubmit: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.security.LoginCtrl.loginSubmit",
       """
@@ -30,7 +30,17 @@ package controllers.security.javascript {
       """
     )
   
-    // @LINE:22
+    // @LINE:17
+    def signup: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.security.LoginCtrl.signup",
+      """
+        function() {
+          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "signup"})
+        }
+      """
+    )
+  
+    // @LINE:23
     def logout: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.security.LoginCtrl.logout",
       """
@@ -40,7 +50,17 @@ package controllers.security.javascript {
       """
     )
   
-    // @LINE:20
+    // @LINE:18
+    def signupSubmit: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.security.LoginCtrl.signupSubmit",
+      """
+        function() {
+          return _wA({method:"POST", url:"""" + _prefix + { _defaultPrefix } + """" + "signupSubmit"})
+        }
+      """
+    )
+  
+    // @LINE:21
     def login: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.security.LoginCtrl.login",
       """

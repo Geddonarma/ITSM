@@ -1,10 +1,43 @@
-@(user: models.users.User)
+@(userForm: Form[models.users.User], user: models.users.User)
+
 @import models.users.Login
 
 @import helper._
 @main("Sign Up",user){
+  <p class="lead">Add a new user</p>
 
-<!DOCTYPE html>
+  @* Display error message from flash, if it is set *@
+@if(flash.containsKey("error")) {
+  <div class="alert alert-success">
+    @flash.get("error")
+  </div>
+}
+
+  @form(action=controllers.security.routes.LoginCtrl.signupSubmit(), 'class -> "form-horizontal", 'role -> "form") {
+      @* CSRF attack prevention *@
+      @* This token, sent by the controller, will be used to authenticate the form submission *@
+      @CSRF.formField
+
+          @inputText(userForm("email"), '_label -> "Email", 'class -> "form-control")
+          @inputText(userForm("name"), '_label -> "Name", 'class -> "form-control")
+          @inputText(userForm("password"), '_label -> "Password", 'class -> "form-control")
+          @inputText(userForm("password2"), '_label -> "Confirm Password", 'class -> "form-control")
+          
+          @inputText(userForm("role").copy(value=Some("customer")), '_label -> "",'hidden -> "hidden")
+          @inputText(userForm("email"), '_label -> "", 'hidden -> "hidden")
+          
+        
+          <div class="actions">
+              <input type="submit" value="Sign Up" class="btn btn-primary">
+              <a href="@controllers.security.routes.LoginCtrl.signup()">
+                  <button type="button" class="btn btn-warning">Cancel</button>
+              </a>
+          </div>
+  } @* end of form *@
+} @* end of main *@
+
+
+<!-- <!DOCTYPE html>
 <html>
   <meta charset="utf-8">
 
@@ -87,5 +120,4 @@ body{
     </div>
 </body>
 
-</html>
-}
+</html> -->
