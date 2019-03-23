@@ -1,3 +1,7 @@
-[0m[[0m[31merror[0m] [0m[0mD:\steph\ITSM\ShoppinCartLY\app\controllers\security\LoginCtrl.java:65:1:  error: incompatible types: Form<User> cannot be converted to Form<Customer>[0m
-[0m[[0m[31merror[0m] [0m[0m        return ok(signup.render(signupForm,User.getLoggedIn(session().get("email"))));[0m
-[0m[[0m[31merror[0m] [0m[0m                                ^^[0m
+[0m[[0m[31merror[0m] [0m[0mD:\steph\ITSM\ShoppinCartLY\app\views\signup.scala.html:104:108: ')' expected but symbol literal found.[0m
+[0m[[0m[31merror[0m] [0m[0m                 @inputText(userForm("role").copy(value=Some("customer")), '_label -> "", 'class -> "hide" 'hidden -> "hidden")[0m
+[0m[[0m[31merror[0m] [0m[0m                                                                                                           ^[0m
+[0m[[0m[31merror[0m] [0m[0mD:\steph\ITSM\ShoppinCartLY\app\views\signup.scala.html:137:13: ';' expected but ')' found.[0m
+[0m[[0m[31merror[0m] [0m[0m   } @* end of form *@[0m
+[0m[[0m[31merror[0m] [0m[0m            ^[0m
+[0m[[0m[31merror[0m] [0m[0mtwo errors found[0m

@@ -18,7 +18,108 @@
       @* This token, sent by the controller, will be used to authenticate the form submission *@
       @CSRF.formField
 
-          @inputText(userForm("email"), '_label -> "Email", 'class -> "form-control")
+<style>
+
+  *{
+    color:limegreen;
+  }
+/* REGISTER */
+.box{
+  width: 40%;
+  top: 10%;
+  left: 30%;
+  /* transform: translate(-50%,-50%); */
+  position: absolute;
+  float: left;
+  background-color: none;
+  text-align: center;
+  color:limegreen;
+  border: 1px solid #3498db;
+  border-radius: 3em;
+}
+.box h1{
+  color: limegreen;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.box input[type = "text"],.box input[type = "password"]{
+  border:0;
+  background: none;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  border: 2px solid #3498db;
+  padding: 14px 10px;
+  width: 200px;
+  outline: none;
+  color:limegreen;
+  border-radius: 24px;
+  transition: 0.25s;
+}
+.box input[type = "text"]:focus,.box input[type = "password"]:focus{
+  width: 280px;
+  border-color: #2ecc71;
+}
+.box input[type = "submit"],.box input[type = "button"]{
+  border:0;
+  background: none;
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+  border: 2px solid #2ecc71;
+  padding: 14px 40px;
+  outline: none;
+  color: limegreen;
+  border-radius: 24px;
+  transition: 0.25s;
+  cursor: pointer;
+}
+.box input[type = "submit"]:hover,.box input[type = "button"]:hover{
+  background: #2ecc71;
+}
+
+.hide{
+  display: none;
+}
+/* END OF REGISTER */
+
+
+</style>
+      <div class="box">
+
+        <h1>Register</h1>
+ 
+                 @inputText(userForm("email"), '_label -> "",
+                 'class -> "input", 'placeholder -> "Email")
+             
+                 @inputText(userForm("name"), '_label -> "",
+                 'class -> "input", 'placeholder -> "Username")
+            
+                 @inputPassword(userForm("password"), '_label -> "",
+                 'class -> "input", 'placeholder -> "Password")
+            
+                 @inputPassword(userForm("password2"), '_label -> "",
+                 'class -> "input", 'placeholder -> "Confirm Password")
+
+                 @inputText(userForm("role").copy(value=Some("customer")), '_label -> "", 'class -> "hide", 'hidden -> "hidden")
+<!--                 
+                 @inputText(userForm("role").copy(value=Some("customer")), '_label -> "",'hidden -> "hidden")
+                  @inputText(userForm("role"), '_label -> "",
+                 'class -> "input", 'placeholder -> "role")
+     
+                 @inputText(userForm("email"), '_label -> "",
+                 'class -> "input", 'placeholder -> "Email")
+             
+             @inputText(userForm("type").copy(value=Some("customer")), '_label -> "", 'hidden -> "hidden") -->
+        
+     
+      <input type="submit" value="Sign up" class="btn"/>
+             
+             <input type="button" value="Cancel" class="btn"
+             onclick="window.location.href = '@controllers.security.routes.LoginCtrl.signup()';">
+             
+         </div>  
+          <!-- @inputText(userForm("email"), '_label -> "Email", 'class -> "form-control")
           @inputText(userForm("name"), '_label -> "Name", 'class -> "form-control")
           @inputText(userForm("password"), '_label -> "Password", 'class -> "form-control")
           @inputText(userForm("password2"), '_label -> "Confirm Password", 'class -> "form-control")
@@ -32,10 +133,10 @@
               <a href="@controllers.security.routes.LoginCtrl.signup()">
                   <button type="button" class="btn btn-warning">Cancel</button>
               </a>
-          </div>
-  } @* end of form *@
-} @* end of main *@
-
+          </div> 
+   } @* end of form *@
+} @* end of main *@ 
+ -->
 
 <!-- <!DOCTYPE html>
 <html>
