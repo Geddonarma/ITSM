@@ -8,11 +8,12 @@ import play.data.format.*;
 import play.data.validation.*;
 
 import models.shopping.*;
+@Table(name = "customer")
+@DiscriminatorValue("customer")
 
 @Entity
 
 // This is a user of type Customer
-@DiscriminatorValue("customer")
 
 // Customer inherits from the User class
 public class Customer extends User{

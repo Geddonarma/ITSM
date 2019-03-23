@@ -1,8 +1,3 @@
-compile
-clean
-compile
-clean
-compile
 clean
 compile
 clean
@@ -498,3 +493,8 @@ exit
 run
 exit
 run
+ru
+run
+h2-browser
+run
+exit

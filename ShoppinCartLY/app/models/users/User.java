@@ -13,8 +13,9 @@ import play.data.validation.*;
 //Map inherited class to a single table
 @Inheritance(strategy=InheritanceType.SINGLE_TABLE)
 //Discriminator column used to define user type
-@DiscriminatorColumn(name="role")
+@DiscriminatorColumn(name="type")
 //The user type is user
+
 @DiscriminatorValue("user")
 public class User extends Model {
     @Id

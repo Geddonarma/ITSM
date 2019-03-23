@@ -61,29 +61,29 @@ public class LoginCtrl extends Controller {
 
 
     public Result signup() {
-        Form<User> signupForm = formFactory.form(User.class);
-        return ok(signup.render(signupForm,User.getLoggedIn(session().get("email"))));
+        Form<Customer> signupForm = formFactory.form(Customer.class);
+        return ok(signup.render(signupForm,Customer.getLoggedIn(session().get("email"))));
     }
     
     public Result signupSubmit() {
     
-        Form<User> signupForm = formFactory.form(User.class).bindFromRequest();
+        Form<Customer> signupForm = formFactory.form(Customer.class).bindFromRequest();
     
         if (signupForm.hasErrors()) {
     
-            return badRequest(signup.render(signupForm,User.getLoggedIn(session().get("email"))));
+            return badRequest(signup.render(signupForm,Customer.getLoggedIn(session().get("email"))));
         } else {
     
-            User  signup = signupForm.get();
+            Customer  signup = signupForm.get();
              
         
-            if(User.getLoggedIn(signup.getEmail())==null){
+            if(Customer.getLoggedIn(signup.getEmail())==null){
                 signup.save();
             }else{
                 signup.update();
             }
     
-        flash("success", "User " + signup.getName() + " was registered.");
+        flash("success", "Customer " + signup.getName() + " was registered.");
     
         return redirect(routes.LoginCtrl.login()); 
         }
