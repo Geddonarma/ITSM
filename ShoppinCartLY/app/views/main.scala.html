@@ -4,13 +4,14 @@
 
 <html lang="en">
 <style>
+
 .dropdown {
   float: left;
   overflow: hidden;
 }
 
 .dropdown .dropbtn {
-  font-size: 16px;  
+  font-size: 17px;  
   border: none;
   outline: none;
   color: white;
@@ -19,11 +20,6 @@
   font-family: inherit;
   margin: 0;
 }
-
-.navbar a:hover, .dropdown:hover .dropbtn {
-  background-color: red;
-}
-
 .dropdown-content {
   display: none;
   position: absolute;
@@ -32,7 +28,6 @@
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
 }
-
 .dropdown-content a {
   float: none;
   color: black;
@@ -41,12 +36,34 @@
   display: block;
   text-align: left;
 }
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: #555;
+  color: white;
+}
 
 .dropdown-content a:hover {
   background-color: #ddd;
+  color: black;
 }
 
+.dropdown:hover .dropdown-content {
+  display: block;
+}
 
+.dropdown .dropbtn {
+    display: none;
+}
+  .dropdown {
+      float: none;
+}
+.dropdown-content {
+    position: relative;
+}
+.dropdown .dropbtn {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
 
   </style>
 
@@ -77,15 +94,6 @@
                  <a class="navbar-brand" href="@routes.ProductCtrl.listProducts(0)">home</a>
                 </li>
 
-                <div class="dropdown">
-                    <button class="dropbtn">DropDown Menu</button>
-                    <div class="dropdown-content">
-                      <a href="@routes.ProductCtrl.listProducts(0)">Search for Products</a>
-                      <a href="@routes.ProductCtrl.about">About Us</a>
-                      <a href="@routes.ProductCtrl.contact">Contact Us</a>
-                      
-                    </div>
-                  </div>
 
                 <li @if(title=="About" ){class="active"}>
                     <a href="@routes.ProductCtrl.about">About us</a>
@@ -114,6 +122,15 @@
                 <li>
                     <a href="@routes.ShoppingCtrl.viewOrders">View Orders</a>
                 </li>
+                <div class="dropdown">
+                        <button class="dropbtn">Dropdown Menu<i class="fa fa-caret-down"></i></button>
+                        <div class="dropdown-content">
+                          <a href="@routes.ProductCtrl.listProducts(0)">Search for Products</a>
+                          <a href="@routes.ProductCtrl.about">About Us</a>
+                          <a href="@routes.ProductCtrl.contact">Contact Us</a>
+                          
+                        </div>
+                      </div>
             </ul>
 
         </div>
