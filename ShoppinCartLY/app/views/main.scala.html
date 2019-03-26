@@ -69,13 +69,12 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Online store - @title</title>
+    <title>Portable Devices- @title</title>
     <!-- Bootstrap Core CSS -->
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.css" rel="stylesheet" />
     <!-- Custom CSS -->
     <link href="@routes.Assets.versioned("stylesheets/main.css")" rel="stylesheet" />
 </head>
-
 <body>
 
     <nav class="navbar navbar-inverse">
@@ -85,17 +84,16 @@
             </div>
 
             <ul class="nav navbar-nav">
-
-                <li @if(title=="Online store" ){class="active"}>
-                     <a class="navbar-brand" href="@routes.ProductCtrl.listProducts(0)">Online Store</a>
+                </li>  
+                <li @if(title=="Portable Devices" ){class="active"}>
+                     <a class="navbar-brand" href="@routes.ProductCtrl.listProducts(0)">Portable Devices</a>
                 </li>  
 
                 <li @if(title=="Products" ){class="active"}>
-                 <a class="navbar-brand" href="@routes.ProductCtrl.listProducts(0)">home</a>
+                 <a class="navbar-brand" href="@routes.ProductCtrl.listProducts(0)">Home</a>
                 </li>
 
-
-                <li @if(title=="About" ){class="active"}>
+              <!---- <li @if(title=="About" ){class="active"}>
                     <a href="@routes.ProductCtrl.about">About us</a>
                 </li>
 
@@ -104,7 +102,8 @@
                         <a href="@routes.ProductCtrl.contact">Contact us</a>
                     </li>
                 </li>
-
+            -->
+            
                 <li @if(title=="Signup" ){class="active"}>
                     <a href="@controllers.security.routes.LoginCtrl.signup">Sign Up</a>
                 </li> 
