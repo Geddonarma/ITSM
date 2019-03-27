@@ -34,18 +34,16 @@ object productDetails extends _root_.play.twirl.api.BaseScalaTemplate[play.twirl
 
 Seq[Any](format.raw/*3.51*/("""
 
+"""),_display_(/*5.2*/main("Full Image", user)/*5.26*/ {_display_(Seq[Any](format.raw/*5.28*/("""
 
-"""),_display_(/*6.2*/main("Full Image", user)/*6.26*/ {_display_(Seq[Any](format.raw/*6.28*/("""
-
-
-  """),format.raw/*9.3*/("""<div class="col-sm-10">
+  """),format.raw/*7.3*/("""<div class="col-sm-10">
     <table class="table table-bordered table-hover table-condensed">
-      """),_display_(/*11.8*/if(flash.containsKey("success"))/*11.40*/ {_display_(Seq[Any](format.raw/*11.42*/("""
-        """),format.raw/*12.9*/("""<div class="alert alert-success">
-          """),_display_(/*13.12*/flash/*13.17*/.get("success")),format.raw/*13.32*/("""
-        """),format.raw/*14.9*/("""</div>
-      """)))}),format.raw/*15.8*/("""
-      """),format.raw/*16.7*/("""<thead>
+      """),_display_(/*9.8*/if(flash.containsKey("success"))/*9.40*/ {_display_(Seq[Any](format.raw/*9.42*/("""
+        """),format.raw/*10.9*/("""<div class="alert alert-success">
+          """),_display_(/*11.12*/flash/*11.17*/.get("success")),format.raw/*11.32*/("""
+        """),format.raw/*12.9*/("""</div>
+      """)))}),format.raw/*13.8*/("""
+      """),format.raw/*14.7*/("""<thead>
         <tr>
           <th>Image</th> 
           <th>ID</th> 
@@ -53,24 +51,21 @@ Seq[Any](format.raw/*3.51*/("""
       </thead>
 
       <tbody>
-
           <tr>
-              """),_display_(/*26.16*/if(env.resource("public/images/productImages/" + p.getId + ".jpg").isDefined)/*26.93*/ {_display_(Seq[Any](format.raw/*26.95*/("""
-                """),format.raw/*27.17*/("""<td><img src="/assets/images/productImages/"""),_display_(/*27.61*/(p.getId + ".jpg")),format.raw/*27.79*/(""""/></td>
-            """)))}/*28.15*/else/*28.20*/{_display_(Seq[Any](format.raw/*28.21*/("""
-                """),format.raw/*29.17*/("""<td><img src="/assets/images/productImages/noImage.jpg"/></td>
-            """)))}),format.raw/*30.14*/("""
-            """),format.raw/*31.13*/("""<td class="numeric">"""),_display_(/*31.34*/p/*31.35*/.getId),format.raw/*31.41*/("""</td>
+              """),_display_(/*23.16*/if(env.resource("public/images/productImages/" + p.getId + ".jpg").isDefined)/*23.93*/ {_display_(Seq[Any](format.raw/*23.95*/("""
+                """),format.raw/*24.17*/("""<td><img src="/assets/images/productImages/"""),_display_(/*24.61*/(p.getId + ".jpg")),format.raw/*24.79*/(""""/></td>
+            """)))}/*25.15*/else/*25.20*/{_display_(Seq[Any](format.raw/*25.21*/("""
+                """),format.raw/*26.17*/("""<td><img src="/assets/images/productImages/noImage.jpg"/></td>
+            """)))}),format.raw/*27.14*/("""
+            """),format.raw/*28.13*/("""<td class="numeric">"""),_display_(/*28.34*/p/*28.35*/.getId),format.raw/*28.41*/("""</td>
             
           </tr>
-        
       </tbody>
 
     </table>
 
-    
   </div>
-</div>
+
 """)))}))
       }
     }
@@ -87,11 +82,11 @@ Seq[Any](format.raw/*3.51*/("""
 
               /*
                   -- GENERATED --
-                  DATE: Tue Mar 26 12:44:02 GMT 2019
-                  SOURCE: /home/wdd/ITSM/ShoppinCartLY/app/views/productDetails.scala.html
-                  HASH: 339793c164820cb8f4b7c0edf02be30af4e17df9
-                  MATRIX: 651->1|689->33|1054->59|1198->108|1227->112|1259->136|1298->138|1329->143|1455->243|1496->275|1536->277|1572->286|1644->331|1658->336|1694->351|1730->360|1774->374|1808->381|1980->526|2066->603|2106->605|2151->622|2222->666|2261->684|2302->707|2315->712|2354->713|2399->730|2506->806|2547->819|2595->840|2605->841|2632->847
-                  LINES: 24->1|25->2|30->3|35->3|38->6|38->6|38->6|41->9|43->11|43->11|43->11|44->12|45->13|45->13|45->13|46->14|47->15|48->16|58->26|58->26|58->26|59->27|59->27|59->27|60->28|60->28|60->28|61->29|62->30|63->31|63->31|63->31|63->31
+                  DATE: Wed Mar 27 10:51:47 GMT 2019
+                  SOURCE: /home/wdd/Downloads/ITSM/ShoppinCartLY/app/views/productDetails.scala.html
+                  HASH: 173323d4bd0244c4132f6edb8d8538b0f9d1387e
+                  MATRIX: 651->1|689->33|1054->59|1198->108|1226->111|1258->135|1297->137|1327->141|1452->241|1492->273|1531->275|1567->284|1639->329|1653->334|1689->349|1725->358|1769->372|1803->379|1974->523|2060->600|2100->602|2145->619|2216->663|2255->681|2296->704|2309->709|2348->710|2393->727|2500->803|2541->816|2589->837|2599->838|2626->844
+                  LINES: 24->1|25->2|30->3|35->3|37->5|37->5|37->5|39->7|41->9|41->9|41->9|42->10|43->11|43->11|43->11|44->12|45->13|46->14|55->23|55->23|55->23|56->24|56->24|56->24|57->25|57->25|57->25|58->26|59->27|60->28|60->28|60->28|60->28
                   -- GENERATED --
               */
           

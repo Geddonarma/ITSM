@@ -18,7 +18,6 @@ public class HomeControllerTest extends WithApplication {
     protected Application provideApplication() {
         return new GuiceApplicationBuilder().build();
     }
-
     @Test
     public void testIndex() {
         Http.RequestBuilder request = new Http.RequestBuilder()

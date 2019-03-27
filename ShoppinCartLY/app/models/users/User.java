@@ -19,6 +19,7 @@ import play.data.validation.*;
 @DiscriminatorValue("user")
 public class User extends Model {
     @Id
+    @Constraints.Required
     private String email;
 
     private String role;    

@@ -4,7 +4,7 @@
 
 @import helper._
 @main("Sign Up",user){
-  <p class="lead">Add a new user</p>
+  <p class="lead"></p>
 
   @* Display error message from flash, if it is set *@
 @if(flash.containsKey("error")) {
@@ -52,7 +52,6 @@
   padding: 14px 10px;
   width: 200px;
   outline: none;
-  color:;
   border-radius: 24px;
   transition: 0.25s;
 }
@@ -98,8 +97,8 @@
                  @inputPassword(userForm("password"), '_label -> "",
                  'class -> "input", 'placeholder -> "Password")
             
-                 @inputPassword(userForm("password2"), '_label -> "",
-                 'class -> "input", 'placeholder -> "Confirm Password")
+<!--              @inputPassword(userForm("password2"), '_label -> "",
+                 'class -> "input", 'placeholder -> "Confirm Password") -->
 
                  @inputText(userForm("role").copy(value=Some("customer")), '_label -> "", 'class -> "hide", 'hidden -> "hidden")
 <!--                 
@@ -118,7 +117,8 @@
              <input type="button" value="Cancel" class="btn"
              onclick="window.location.href = '@controllers.security.routes.LoginCtrl.signup()';">
              
-         </div>  
+         </div> 
+
           <!-- @inputText(userForm("email"), '_label -> "Email", 'class -> "form-control")
           @inputText(userForm("name"), '_label -> "Name", 'class -> "form-control")
           @inputText(userForm("password"), '_label -> "Password", 'class -> "form-control")

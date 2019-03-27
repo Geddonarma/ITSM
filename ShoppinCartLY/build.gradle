@@ -11,7 +11,6 @@ model {
         play {
             platform play: playVersion, scala: scalaVersion, java: '1.8'
             injectedRoutesGenerator = true
-
             sources {
                 twirlTemplates {
                     defaultImports = TwirlImports.JAVA
