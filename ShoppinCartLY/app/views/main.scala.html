@@ -5,12 +5,12 @@
 <html lang="en">
 <style>
 
-.dropdown {
-  float: left;
+.dropdown .nav{
+  float: none;
   overflow: hidden;
 }
 
-.dropdown .dropbtn {
+.dropdown .dropbtn{
   font-size: 17px;  
   border: none;
   outline: none;
@@ -23,9 +23,9 @@
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #f9f9f9;
+  background-color: #c2eff5;
   min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 8px 16px 0px rgba(45, 138, 167, 0.377);
   z-index: 1;
 }
 .dropdown-content a {
@@ -37,12 +37,12 @@
   text-align: left;
 }
 .navbar a:hover, .dropdown:hover .dropbtn {
-  background-color: #555;
+  background-color: rgba(45, 45, 48, 0.979);
   color: white;
 }
 
 .dropdown-content a:hover {
-  background-color: #ddd;
+  background-color: rgb(174, 205, 212);
   color: black;
 }
 
@@ -50,15 +50,6 @@
   display: block;
 }
 
-.dropdown .dropbtn {
-    display: none;
-}
-  .dropdown {
-      float: none;
-}
-.dropdown-content {
-    position: relative;
-}
 .dropdown .dropbtn {
     display: block;
     width: 100%;
@@ -119,15 +110,14 @@
                 <li>
                     <a href="@routes.ShoppingCtrl.viewOrders">View Orders</a>
                 </li>
-                <div class="dropdown">
-                        <button class="dropbtn">Dropdown Menu<i class="fa fa-caret-down"></i></button>
-                        <div class="dropdown-content">
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropbtn">Dropdown Menu</a>                        <div class="dropdown-content">
                           <a href="@routes.ProductCtrl.listProducts(0)">Search for Products</a>
                           <a href="@routes.ProductCtrl.about">About Us</a>
                           <a href="@routes.ProductCtrl.contact">Contact Us</a>
                           
                         </div>
-                      </div>
+                    </li>
             </ul>
 
         </div>
