@@ -42,13 +42,15 @@ public class ProductCtrl extends Controller {
 		User u = User.getLoggedIn(session().get("email"));
 		return u;
 	}
-    public Result index() {
+    public Result products() {
         return redirect(routes.ProductCtrl.listProducts(0,""));
     }
     //public Result about() {
       //  return ok(about.render());
     //}
-    
+    public Result index() {
+        return ok(index.render(User.getLoggedIn(session().get("email"))));
+    }
     public Result about() {
         return ok(about.render(User.getLoggedIn(session().get("email"))));
     }

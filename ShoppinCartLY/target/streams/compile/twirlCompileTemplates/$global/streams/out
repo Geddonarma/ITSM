@@ -1,3 +1,3 @@
-[0m[[0m[31merror[0m] [0m[0m[Error] /home/wdd/Desktop/ITSM/ShoppinCartLY/app/views/signup.scala.html:123[0m
-[0m[[0m[31merror[0m] [0m[0m<!-- } -->: Not parsed?[0m
+[0m[[0m[31merror[0m] [0m[0m[Error] /home/wdd/ITSM/ShoppinCartLY/app/views/index.scala.html:196[0m
+[0m[[0m[31merror[0m] [0m[0m    </head>: Expected '}' but found 'EOF'[0m
 [0m[[0m[31merror[0m] [0m[0m(compile:[31mtwirlCompileTemplates[0m) Twirl compilation failed[0m
