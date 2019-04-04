@@ -181,7 +181,7 @@ Seq[Any](format.raw/*1.27*/("""
           <div class="panel panel-primary">
             <div class="panel-heading">BLACK FRIDAY DEAL</div>
             <div class="panel-body"><img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image"></div>
-            <div class="panel-footer">80% OFF Selected Items</div> <!---<marquee style="background-color: red; text-decoration-color: blue;"-->
+            <div class="panel-footer">80% OFF SELECT ITEMS</div> <!---<marquee style="background-color: red; text-decoration-color: blue;"-->
           </div>
         </div>
         <div class="col-sm-4"> 
@@ -198,8 +198,8 @@ Seq[Any](format.raw/*1.27*/("""
       <footer class="container-fluid text-center">
       <p>PORTABLE DEVICES</p>
       <form class="form-inline">Get deals:
-        <input type="email" class="form-control" size="50" placeholder="Email Address">
-        <button type="button" class="btn btn-danger">Sign Up</button>
+        
+        <button type="button" class="btn btn-danger" onclick="window.location.href = '"""),_display_(/*170.88*/controllers/*170.99*/.security.routes.LoginCtrl.signup()),format.raw/*170.134*/("""';">Sign Up</button>
       </form>
     </footer>
     </head>
@@ -221,11 +221,11 @@ Seq[Any](format.raw/*1.27*/("""
 
               /*
                   -- GENERATED --
-                  DATE: Thu Apr 04 12:50:12 IST 2019
-                  SOURCE: /home/wdd/ITSM/ShoppinCartLY/app/views/index.scala.html
-                  HASH: 5a6e22f5bb559cc6aa9e356dd2746b58e1595d28
-                  MATRIX: 959->1|1079->26|1106->28|1132->46|1170->47|1202->53|1828->651|1857->652|1896->663|1977->717|2006->718|2051->736|2159->816|2188->817|2227->828|2314->888|2343->889|2386->905|2434->925|2463->926|2502->937|2624->1032|2652->1033|2691->1045|8305->6628
-                  LINES: 28->1|33->1|34->2|34->2|34->2|36->4|47->15|47->15|48->16|50->18|50->18|52->20|53->21|53->21|54->22|56->24|56->24|58->26|58->26|58->26|59->27|62->30|62->30|64->32|207->175
+                  DATE: Thu Apr 04 13:17:13 IST 2019
+                  SOURCE: /home/wdd/Desktop/ITSM/ShoppinCartLY/app/views/index.scala.html
+                  HASH: 93f9a2f3f94d6fcaf7feb98bb83de08257ba7032
+                  MATRIX: 959->1|1079->26|1106->28|1132->46|1170->47|1202->53|1828->651|1857->652|1896->663|1977->717|2006->718|2051->736|2159->816|2188->817|2227->828|2314->888|2343->889|2386->905|2434->925|2463->926|2502->937|2624->1032|2652->1033|2691->1045|8185->6511|8206->6522|8264->6557|8369->6631
+                  LINES: 28->1|33->1|34->2|34->2|34->2|36->4|47->15|47->15|48->16|50->18|50->18|52->20|53->21|53->21|54->22|56->24|56->24|58->26|58->26|58->26|59->27|62->30|62->30|64->32|202->170|202->170|202->170|207->175
                   -- GENERATED --
               */
           

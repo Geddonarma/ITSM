@@ -39,6 +39,7 @@ public class LoginCtrl extends Controller {
         else {
           
             session().clear();
+            
             session("email", loginForm.get().getEmail());
         
             User u = User.getLoggedIn(loginForm.get().getEmail());
@@ -47,7 +48,6 @@ public class LoginCtrl extends Controller {
                 return redirect(controllers.routes.AdminProductCtrl.index());
             }
             
-            // Return to home page
             return redirect(controllers.routes.ProductCtrl.index());
         }
     }

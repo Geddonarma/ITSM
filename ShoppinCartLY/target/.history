@@ -1,4 +1,3 @@
-clean
 compile
 run
 clean
@@ -498,3 +497,4 @@ exit
 run
 exit
 run
+exit

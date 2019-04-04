@@ -30,8 +30,7 @@ public class CheckIfAdmin extends Action.Simple {
                 return delegate.call(ctx);
             }    
         }
-        //Result unauthorized = Results.unauthorized("unauthorized");
-        // Unauthorised - redirect to login page
+
         ctx.flash().put("error", "Admin Login Required.");
         return CompletableFuture.completedFuture(redirect(routes.LoginCtrl.login()));
     }
