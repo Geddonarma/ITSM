@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
 // @SOURCE:/home/wdd/ITSM/ShoppinCartLY/conf/routes
-// @DATE:Wed Apr 03 13:32:37 IST 2019
+// @DATE:Thu Apr 04 12:17:46 IST 2019
 
 package router
 
@@ -52,7 +52,7 @@ class Routes(
   }
 
   def documentation = List(
-    ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """index""", """controllers.ProductCtrl.index"""),
+    ("""GET""", this.prefix, """controllers.ProductCtrl.index"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """listProducts""", """controllers.ProductCtrl.listProducts(cat:Long ?= 0, filter:String ?= "")"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """productDetails/""" + "$" + """id<[^/]+>""", """controllers.ProductCtrl.productDetails(id:Long)"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """about""", """controllers.ProductCtrl.about"""),
@@ -88,7 +88,7 @@ class Routes(
 
   // @LINE:6
   private[this] lazy val controllers_ProductCtrl_index0_route = Route("GET",
-    PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("index")))
+    PathPattern(List(StaticPart(this.prefix)))
   )
   private[this] lazy val controllers_ProductCtrl_index0_invoker = createInvoker(
     ProductCtrl_0.index,
@@ -98,7 +98,7 @@ class Routes(
       "index",
       Nil,
       "GET",
-      this.prefix + """index""",
+      this.prefix + """""",
       """""",
       Seq()
     )

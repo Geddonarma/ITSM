@@ -3,7 +3,7 @@
 # ~~~~
 
 
-GET		/index   						        controllers.ProductCtrl.index
+GET		/   						        controllers.ProductCtrl.index
 
 # Show a list of products - note optional parameter
 

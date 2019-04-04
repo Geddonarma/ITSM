@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
 // @SOURCE:/home/wdd/ITSM/ShoppinCartLY/conf/routes
-// @DATE:Wed Apr 03 13:32:37 IST 2019
+// @DATE:Thu Apr 04 12:17:46 IST 2019
 
 import play.api.routing.JavaScriptReverseRoute
 

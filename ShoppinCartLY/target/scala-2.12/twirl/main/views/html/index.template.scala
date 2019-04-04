@@ -81,16 +81,16 @@ Seq[Any](format.raw/*1.27*/("""
           <div class="item active">
             <img src="https://i.imgur.com/yDTP3sI.png" alt="Image">
             <div class="carousel-caption">
-              <h3>Sell $</h3>
-              <p>Money Money.</p>
+              <h3>-</h3>
+              <p>--</p>
             </div>      
           </div>
     
           <div class="item">
-            <img src="https://placehold.it/1200x400?text=Another Image Maybe" alt="Image">
+            <img src="https://imgur.com/72W5uAM.jpg" alt="Image">
             <div class="carousel-caption">
-              <h3>More Sell $</h3>
-              <p>Lorem ipsum...</p>
+              <h3>-</h3>
+              <p>--</p>
             </div>      
           </div>
         </div>
@@ -146,23 +146,23 @@ Seq[Any](format.raw/*1.27*/("""
       <div class="row">
         <div class="col-sm-4">
           <div class="panel panel-primary">
-            <div class="panel-heading">BLACK FRIDAY DEAL</div>
+            <div class="panel-heading">CYPER MONDAY DEAL</div>
             <div class="panel-body"><img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image"></div>
-            <div class="panel-footer">Buy 50 mobiles and get a gift card</div>
+            <div class="panel-footer">30% OFF ANY ITEMS</div>
           </div>
         </div>
         <div class="col-sm-4"> 
           <div class="panel panel-danger">
-            <div class="panel-heading">BLACK FRIDAY DEAL</div>
+            <div class="panel-heading">NEXT DAY TUESDAY DEAL</div>
             <div class="panel-body"><img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image"></div>
-            <div class="panel-footer">Buy 50 mobiles and get a gift card</div>
+            <div class="panel-footer">SPEND OVER 30£ AND GET NEXT DAY DELIVERY FREE</div>
           </div>
         </div>
         <div class="col-sm-4"> 
           <div class="panel panel-success">
-            <div class="panel-heading">BLACK FRIDAY DEAL</div>
+            <div class="panel-heading">WEDNESDAY DEAL</div>
             <div class="panel-body"><img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image"></div>
-            <div class="panel-footer">Buy 50 mobiles and get a gift card</div>
+            <div class="panel-footer">BUY ONE GET ONE HALF PRICE</div>
           </div>
         </div>
       </div>
@@ -172,21 +172,21 @@ Seq[Any](format.raw/*1.27*/("""
       <div class="row">
         <div class="col-sm-4">
           <div class="panel panel-primary">
-            <div class="panel-heading">BLACK FRIDAY DEAL</div>
+            <div class="panel-heading">THURSDAY DEAL</div>
             <div class="panel-body"><img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image"></div>
-            <div class="panel-footer">Buy 50 mobiles and get a gift card</div>
+            <div class="panel-footer">20% OFF ANY ITEMS</div>
           </div>
         </div>
         <div class="col-sm-4"> 
           <div class="panel panel-primary">
             <div class="panel-heading">BLACK FRIDAY DEAL</div>
             <div class="panel-body"><img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image"></div>
-            <div class="panel-footer">Buy 50 mobiles and get a gift card</div>
+            <div class="panel-footer">80% OFF Selected Items</div> <!---<marquee style="background-color: red; text-decoration-color: blue;"-->
           </div>
         </div>
         <div class="col-sm-4"> 
           <div class="panel panel-primary">
-            <div class="panel-heading">BLACK FRIDAY DEAL</div>
+            <div class="panel-heading">SUPER SUNDAY DEAL</div>
             <div class="panel-body"><img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image"></div>
             <div class="panel-footer">Buy 50 mobiles and get a gift card</div>
           </div>
@@ -196,7 +196,7 @@ Seq[Any](format.raw/*1.27*/("""
     
     
       <footer class="container-fluid text-center">
-      <p>Footer Text</p>
+      <p>PORTABLE DEVICES</p>
       <form class="form-inline">Get deals:
         <input type="email" class="form-control" size="50" placeholder="Email Address">
         <button type="button" class="btn btn-danger">Sign Up</button>
@@ -221,10 +221,10 @@ Seq[Any](format.raw/*1.27*/("""
 
               /*
                   -- GENERATED --
-                  DATE: Wed Apr 03 16:08:19 IST 2019
+                  DATE: Thu Apr 04 12:50:12 IST 2019
                   SOURCE: /home/wdd/ITSM/ShoppinCartLY/app/views/index.scala.html
-                  HASH: 52d7dc998c9fb812aeac64ad0d6835c81aa612bc
-                  MATRIX: 959->1|1079->26|1106->28|1132->46|1170->47|1202->53|1828->651|1857->652|1896->663|1977->717|2006->718|2051->736|2159->816|2188->817|2227->828|2314->888|2343->889|2386->905|2434->925|2463->926|2502->937|2624->1032|2652->1033|2691->1045|8331->6654
+                  HASH: 5a6e22f5bb559cc6aa9e356dd2746b58e1595d28
+                  MATRIX: 959->1|1079->26|1106->28|1132->46|1170->47|1202->53|1828->651|1857->652|1896->663|1977->717|2006->718|2051->736|2159->816|2188->817|2227->828|2314->888|2343->889|2386->905|2434->925|2463->926|2502->937|2624->1032|2652->1033|2691->1045|8305->6628
                   LINES: 28->1|33->1|34->2|34->2|34->2|36->4|47->15|47->15|48->16|50->18|50->18|52->20|53->21|53->21|54->22|56->24|56->24|58->26|58->26|58->26|59->27|62->30|62->30|64->32|207->175
                   -- GENERATED --
               */
