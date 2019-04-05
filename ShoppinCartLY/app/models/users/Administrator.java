@@ -7,11 +7,10 @@ import io.ebean.*;
 import play.data.format.*;
 import play.data.validation.*;
 
+@Table(name="User")
+@DiscriminatorValue("a")
 @Entity
-// This is a User of type admin
-@DiscriminatorValue("admin")
 
-// Administrator inherits from the User class
 public class Administrator extends User{
 
 	public Administrator() {
@@ -22,5 +21,6 @@ public class Administrator extends User{
 	{
 		super(email, role, name, password);
 	}
+	
 	
 } 

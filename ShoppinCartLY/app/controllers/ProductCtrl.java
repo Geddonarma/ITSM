@@ -93,5 +93,12 @@ public class ProductCtrl extends Controller {
 
         return ok(productDetails.render(p,User.getLoggedIn(session().get("email")),e));
     }
+ /*    public Result usersAdmin() {
+        List<Administrator> userList = null;
     
+        userList = Administrator.findAll();
+    
+        return ok(admin.render(userList,User.getLoggedIn(session().get("email"))));
+    
+     } */
 }

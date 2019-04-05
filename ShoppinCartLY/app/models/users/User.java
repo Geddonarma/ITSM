@@ -16,7 +16,7 @@ import play.data.validation.*;
 @DiscriminatorColumn(name="type")
 //The user type is user
 
-@DiscriminatorValue("user")
+@DiscriminatorValue("u")
 public class User extends Model {
     @Id
     @Constraints.Required
@@ -89,7 +89,8 @@ public class User extends Model {
             return null;
         }
         else {
-            return find.byId(id);
+            return find.query().where().eq("email", id).findUnique();
+            /* find.byId(id) */
         }
     }
 

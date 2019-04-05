@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
-// @SOURCE:/home/wdd/Desktop/ITSM/ShoppinCartLY/conf/routes
-// @DATE:Thu Apr 04 13:06:44 IST 2019
+// @SOURCE:/home/wdd/ITSM/ShoppinCartLY/conf/routes
+// @DATE:Fri Apr 05 11:10:41 IST 2019
 
 package controllers;
 
