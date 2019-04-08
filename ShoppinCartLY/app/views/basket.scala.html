@@ -49,22 +49,28 @@
 		</table>
         <div class="row">
             <div class="col-md-12">
-                <p class="text-right"><strong>Basket Total: &euro; @("%.2f".format(customer.getBasket.getBasketTotal))</strong></p>
+                <p class="text-center"><strong>Basket Total: &euro; @("%.2f".format(customer.getBasket.getBasketTotal))</strong></p>
             </div>  
         </div>
         <div class="row">
             <div class="col-md-6">
-                <p class="text-right">
+                <p class="text-center">
                     <a href="@routes.ShoppingCtrl.emptyBasket()" class="btn btn-danger btn-sm" onclick="return confirmDel();">
                     <span class="glyphicon glyphicon-trash"></span> Empty Basket</a>
                 </p>
             </div>  
             <div class="col-md-6">
-                <p class="text-right">
+                <p class="text-center">
                     <a href="@routes.ShoppingCtrl.placeOrder()" class="btn btn-success btn-sm">
                     <span class="glyphicon glyphicon-euro"></span> Place Order</a>
                 </p>
             </div>  
+            <div class="col-md-6">
+                <p class="text-center">
+                    <a href="@routes.ProductCtrl.listProducts(0)" class="btn btn-info btn-sm">
+                    <span class="glyphicon glyphicon-hand-left"></span> Continue Shopping</a>
+                </p>
+            </div> 
         </div>
     </div>
 
