@@ -55,11 +55,16 @@
                 <p class="text-center"><strong>Order Total: &euro; @("%.2f".format(o.getOrderTotal))</strong></p>
             </div>  
         </div>
+<style>
+.button1{
+    background-color: rgb(226, 13, 13);
+}
+</style>
         <div class="row">
             <div class="col-md-12">
         <p class="text-center">
             <a href="@routes.ShoppingCtrl.cancelOrder(o.getId())">
-              <button class="btn btn-primary">Cancel Order</button>
+              <button class="btn btn-warning button1">Cancel Order</button>
             </a>
           </p>
         </div>  
@@ -69,7 +74,7 @@
         </div>
         <div class="col-md-15">
             <p class="text-center">
-                <a href="@routes.ProductCtrl.listProducts(0)" class="btn btn-primary">
+                <a href="@routes.ProductCtrl.listProducts(0)" class="btn btn-success">
                 <span class="glyphicon glyphicon-hand-left"></span> Continue Shopping</a>
             </p>
         </div> 

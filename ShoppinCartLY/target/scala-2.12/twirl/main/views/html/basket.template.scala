@@ -91,21 +91,33 @@ Seq[Any](format.raw/*1.35*/("""
                     <span class="glyphicon glyphicon-trash"></span> Empty Basket</a>
                 </p>
             </div>  
+            
+            <p class="text-center"
+<form action=""""),_display_(/*64.16*/routes/*64.22*/.ShoppingCtrl.placeOrder()),format.raw/*64.48*/("""" method="GET">
+        <script
+        src="https://checkout.stripe.com/checkout.js" class="stripe-button" 
+        data-key="pk_test_cO2OSsh3YSQq7EPGH7QFK50F00xgTIyrfJ"
+        data-amount='"""),_display_(/*68.23*/("%.0f".format(customer.getBasket.getBasketTotal))),format.raw/*68.73*/("""00'
+        data-name="Portable Devices"
+        data-description="Secure Payment"
+        data-image=""
+        data-locale="auto"
+        data-currency="eur">
+        
+        </script>
+   
+</form>
+</p>
+
             <div class="col-md-15">
                 <p class="text-center">
-                    <a href=""""),_display_(/*64.31*/routes/*64.37*/.ShoppingCtrl.placeOrder()),format.raw/*64.63*/("""" class="btn btn-success">
-                    <span class="glyphicon glyphicon-euro"></span> Place Order</a>
-                </p>
-            </div>  
-            <div class="col-md-15">
-                <p class="text-center">
-                    <a href=""""),_display_(/*70.31*/routes/*70.37*/.ProductCtrl.listProducts(0)),format.raw/*70.65*/("""" class="btn btn-info ">
+                    <a href=""""),_display_(/*82.31*/routes/*82.37*/.ProductCtrl.listProducts(0)),format.raw/*82.65*/("""" class="btn btn-success ">
                     <span class="glyphicon glyphicon-hand-left"></span> Continue Shopping</a>
                 </p>
             </div>
             <div class="col-md-15">
                 <p class="text-center">
-                    <a href=""""),_display_(/*76.31*/routes/*76.37*/.ShoppingCtrl.viewOrders),format.raw/*76.61*/("""" class="btn btn-primary ">
+                    <a href=""""),_display_(/*88.31*/routes/*88.37*/.ShoppingCtrl.viewOrders),format.raw/*88.61*/("""" class="btn btn-info ">
                     <span class="glyphicon glyphicon-hourglass"></span> Order History</a>
                 </p>
             </div>  
@@ -114,27 +126,10 @@ Seq[Any](format.raw/*1.35*/("""
 
 <script>
 	// JavaScript function returns true if user clicks yes, otherwise, false
-	function confirmDel() """),format.raw/*85.24*/("""{"""),format.raw/*85.25*/("""
-		"""),format.raw/*86.3*/("""return confirm('Are you sure?');
-	"""),format.raw/*87.2*/("""}"""),format.raw/*87.3*/("""
-"""),format.raw/*88.1*/("""</script>
-
-
-
-<form action=""""),_display_(/*92.16*/routes/*92.22*/.ShoppingCtrl.placeOrder()),format.raw/*92.48*/("""" method="GET">
-        <script
-        src="https://checkout.stripe.com/checkout.js" class="stripe-button" class="text-center"
-        data-key="pk_test_cO2OSsh3YSQq7EPGH7QFK50F00xgTIyrfJ"
-        data-amount='"""),_display_(/*96.23*/("%.0f".format(customer.getBasket.getBasketTotal))),format.raw/*96.73*/("""00'
-        data-name="Portable Devices"
-        data-description="Widget"
-        data-image=""
-        data-locale="auto"
-        data-currency="eur">
-        
-        </script>
-   
-</form>
+	function confirmDel() """),format.raw/*97.24*/("""{"""),format.raw/*97.25*/("""
+		"""),format.raw/*98.3*/("""return confirm('Are you sure?');
+	"""),format.raw/*99.2*/("""}"""),format.raw/*99.3*/("""
+"""),format.raw/*100.1*/("""</script>
 
 
 
@@ -155,11 +150,11 @@ Seq[Any](format.raw/*1.35*/("""
 
               /*
                   -- GENERATED --
-                  DATE: Wed Apr 10 13:56:40 IST 2019
+                  DATE: Wed Apr 10 14:31:42 IST 2019
                   SOURCE: /home/wdd/Desktop/ITSM/ShoppinCartLY/app/views/basket.scala.html
-                  HASH: a6d3b273bb2bf02f0df976ca6b03ab5fcc04d827
-                  MATRIX: 964->1|1070->38|1106->68|1138->94|1192->34|1221->119|1248->120|1319->166|1360->199|1399->201|1428->203|1501->250|1542->282|1582->284|1615->290|1686->334|1700->339|1736->354|1769->360|1809->370|1841->375|2195->702|2236->734|2276->736|2325->757|2435->840|2498->887|2538->889|2587->910|2648->944|2658->945|2698->964|2760->999|2770->1000|2819->1028|2888->1070|2936->1097|3005->1139|3057->1170|3119->1205|3129->1206|3164->1220|3235->1264|3250->1270|3303->1302|3432->1404|3447->1410|3518->1460|3659->1570|3730->1610|3761->1614|3939->1765|4011->1815|4220->1997|4235->2003|4283->2030|4600->2320|4615->2326|4662->2352|4947->2610|4962->2616|5011->2644|5303->2909|5318->2915|5363->2939|5684->3232|5713->3233|5743->3236|5804->3270|5832->3271|5860->3272|5915->3300|5930->3306|5977->3332|6216->3544|6287->3594
-                  LINES: 28->1|31->4|32->5|33->6|36->1|39->7|40->8|41->9|41->9|41->9|43->11|46->14|46->14|46->14|47->15|48->16|48->16|48->16|49->17|50->18|52->20|66->34|66->34|66->34|67->35|68->36|68->36|68->36|69->37|70->38|70->38|70->38|71->39|71->39|71->39|72->40|72->40|73->41|73->41|74->42|74->42|74->42|75->43|75->43|75->43|76->44|76->44|76->44|78->46|79->47|80->48|84->52|84->52|90->58|90->58|90->58|96->64|96->64|96->64|102->70|102->70|102->70|108->76|108->76|108->76|117->85|117->85|118->86|119->87|119->87|120->88|124->92|124->92|124->92|128->96|128->96
+                  HASH: 3a18a6e8592e6511c7554e3ebccd00c0828b5102
+                  MATRIX: 964->1|1070->38|1106->68|1138->94|1192->34|1221->119|1248->120|1319->166|1360->199|1399->201|1428->203|1501->250|1542->282|1582->284|1615->290|1686->334|1700->339|1736->354|1769->360|1809->370|1841->375|2195->702|2236->734|2276->736|2325->757|2435->840|2498->887|2538->889|2587->910|2648->944|2658->945|2698->964|2760->999|2770->1000|2819->1028|2888->1070|2936->1097|3005->1139|3057->1170|3119->1205|3129->1206|3164->1220|3235->1264|3250->1270|3303->1302|3432->1404|3447->1410|3518->1460|3659->1570|3730->1610|3761->1614|3939->1765|4011->1815|4220->1997|4235->2003|4283->2030|4557->2277|4572->2283|4619->2309|4839->2502|4910->2552|5249->2864|5264->2870|5313->2898|5608->3166|5623->3172|5668->3196|5986->3486|6015->3487|6045->3490|6106->3524|6134->3525|6163->3526
+                  LINES: 28->1|31->4|32->5|33->6|36->1|39->7|40->8|41->9|41->9|41->9|43->11|46->14|46->14|46->14|47->15|48->16|48->16|48->16|49->17|50->18|52->20|66->34|66->34|66->34|67->35|68->36|68->36|68->36|69->37|70->38|70->38|70->38|71->39|71->39|71->39|72->40|72->40|73->41|73->41|74->42|74->42|74->42|75->43|75->43|75->43|76->44|76->44|76->44|78->46|79->47|80->48|84->52|84->52|90->58|90->58|90->58|96->64|96->64|96->64|100->68|100->68|114->82|114->82|114->82|120->88|120->88|120->88|129->97|129->97|130->98|131->99|131->99|132->100
                   -- GENERATED --
               */
           
