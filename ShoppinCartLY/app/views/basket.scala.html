@@ -53,24 +53,30 @@
             </div>  
         </div>
         <div class="row">
-            <div class="col-md-6">
+            <div class="col-md-15">
                 <p class="text-center">
-                    <a href="@routes.ShoppingCtrl.emptyBasket()" class="btn btn-danger btn-sm" onclick="return confirmDel();">
+                    <a href="@routes.ShoppingCtrl.emptyBasket()" class="btn btn-danger" onclick="return confirmDel();">
                     <span class="glyphicon glyphicon-trash"></span> Empty Basket</a>
                 </p>
             </div>  
-            <div class="col-md-6">
+            <div class="col-md-15">
                 <p class="text-center">
-                    <a href="@routes.ShoppingCtrl.placeOrder()" class="btn btn-success btn-sm">
+                    <a href="@routes.ShoppingCtrl.placeOrder()" class="btn btn-success">
                     <span class="glyphicon glyphicon-euro"></span> Place Order</a>
                 </p>
             </div>  
-            <div class="col-md-6">
+            <div class="col-md-15">
                 <p class="text-center">
-                    <a href="@routes.ProductCtrl.listProducts(0)" class="btn btn-info btn-sm">
+                    <a href="@routes.ProductCtrl.listProducts(0)" class="btn btn-info ">
                     <span class="glyphicon glyphicon-hand-left"></span> Continue Shopping</a>
                 </p>
-            </div> 
+            </div>
+            <div class="col-md-15">
+                <p class="text-center">
+                    <a href="@routes.ShoppingCtrl.viewOrders" class="btn btn-primary ">
+                    <span class="glyphicon glyphicon-hourglass"></span> Order History</a>
+                </p>
+            </div>  
         </div>
     </div>
 
@@ -80,4 +86,25 @@
 		return confirm('Are you sure?');
 	}
 </script>
+
+
+
+<form action="@routes.ShoppingCtrl.placeOrder()" method="GET">
+        <script
+        src="https://checkout.stripe.com/checkout.js" class="stripe-button" class="text-center"
+        data-key="pk_test_cO2OSsh3YSQq7EPGH7QFK50F00xgTIyrfJ"
+        data-amount='@("%.0f".format(customer.getBasket.getBasketTotal))00'
+        data-name="Portable Devices"
+        data-description="Widget"
+        data-image=""
+        data-locale="auto"
+        data-currency="eur">
+        
+        </script>
+   
+</form>
+
+
+
+
 }

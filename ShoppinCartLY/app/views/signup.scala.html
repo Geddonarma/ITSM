@@ -19,10 +19,10 @@
       @CSRF.formField
 
      
-      <img src="https://wallpapertag.com/wallpaper/full/9/6/e/138252-4k-abstract-wallpaper-2560x1600-for-iphone-6.jpg" id="bg" alt="Image">
-      
+<!--       <img src="https://wallpapertag.com/wallpaper/full/9/6/e/138252-4k-abstract-wallpaper-2560x1600-for-iphone-6.jpg" id="bg" alt="Image">
+ -->      
 <style>
-#bg{
+/* #bg{
   background:url("https://wallpapertag.com/wallpaper/full/9/6/e/138252-4k-abstract-wallpaper-2560x1600-for-iphone-6.jpg") no-repeat;
   width:auto;
   margin: auto;
@@ -39,7 +39,7 @@ img{
   *{
     color:red;
   }
-/* REGISTER */
+
 .box{
   width: 40%;
   top: 10%;
@@ -94,12 +94,41 @@ img{
 
 .hide{
   display: none;
-}
-/* END OF REGISTER */
+} */
 
+.container{
+ width: 130%;
+ min-height: 100vh;
+ background-image: linear-gradient(170deg, #B621fe, #1fd1f9);
+ display: -webkit-box;
+ display: -webkit-flex;
+ display: -moz-box;
+ display: -moz-flexbox;
+ display: flex;
+ flex-wrap: wrap;
+ justify-content: center;
+ align-items: center;
+ padding: 15px;
+ z-index: 1;
+}
+
+.box{
+  width: 400px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  border-radius: 10px;
+  padding: 40px;
+  box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.15);
+
+}
 
 </style>
+<body>
 <form id="sig">
+  <div class="container">
       <div class="box">
 
         <h1>Register</h1>
@@ -124,8 +153,9 @@ img{
              onclick="window.location.href = '@controllers.security.routes.LoginCtrl.signup()';">
              
          </div> 
-        
+        </div>
         </form>
+      </body>
       }
     }
     

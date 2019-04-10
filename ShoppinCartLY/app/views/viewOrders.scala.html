@@ -52,18 +52,33 @@
         </table>
         <div class="row">
             <div class="col-md-12">
-                <p class="text-right"><strong>Order Total: &euro; @("%.2f".format(o.getOrderTotal))</strong></p>
+                <p class="text-center"><strong>Order Total: &euro; @("%.2f".format(o.getOrderTotal))</strong></p>
             </div>  
         </div>
-        <p>
+        <div class="row">
+            <div class="col-md-12">
+        <p class="text-center">
             <a href="@routes.ShoppingCtrl.cancelOrder(o.getId())">
               <button class="btn btn-primary">Cancel Order</button>
             </a>
           </p>
+        </div>  
+    </div>
          }<!-- End of For loop -->
        
         </div>
-
+        <div class="col-md-15">
+            <p class="text-center">
+                <a href="@routes.ProductCtrl.listProducts(0)" class="btn btn-primary">
+                <span class="glyphicon glyphicon-hand-left"></span> Continue Shopping</a>
+            </p>
+        </div> 
+        <div class="col-md-15">
+            <p class="text-center">
+                <a href="@routes.ShoppingCtrl.showBasket" class="btn btn-primary">
+                <span class="glyphicon glyphicon-shopping-cart"></span> View Basket</a>
+            </p>
+        </div> 
 
 
 }
