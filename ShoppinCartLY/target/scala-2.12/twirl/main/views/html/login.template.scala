@@ -37,7 +37,7 @@ Seq[Any](format.raw/*3.38*/("""
 """),format.raw/*5.1*/("""
 """),_display_(/*6.2*/main("Login", user)/*6.21*/ {_display_(Seq[Any](format.raw/*6.23*/("""
     """),format.raw/*7.5*/("""<style>
- .container"""),format.raw/*8.12*/("""{"""),format.raw/*8.13*/("""
+.container"""),format.raw/*8.11*/("""{"""),format.raw/*8.12*/("""
  """),format.raw/*9.2*/("""width: 130%;
  min-height: 100vh;
  background-image: linear-gradient(170deg, #B621fe, #1fd1f9);
@@ -55,6 +55,7 @@ Seq[Any](format.raw/*3.38*/("""
 
 """),format.raw/*24.1*/(""".box"""),format.raw/*24.5*/("""{"""),format.raw/*24.6*/("""
   """),format.raw/*25.3*/("""width: 400px;
+  text-align: center;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -63,19 +64,19 @@ Seq[Any](format.raw/*3.38*/("""
   border-radius: 10px;
   padding: 40px;
   box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.15);
+  text-align: center;
+"""),format.raw/*36.1*/("""}"""),format.raw/*36.2*/("""
 
-"""),format.raw/*35.1*/("""}"""),format.raw/*35.2*/("""
-"""),format.raw/*36.1*/("""h1"""),format.raw/*36.3*/("""{"""),format.raw/*36.4*/("""
-"""),format.raw/*37.1*/("""font-size: 50px;
+"""),format.raw/*38.1*/("""h1"""),format.raw/*38.3*/("""{"""),format.raw/*38.4*/("""
+"""),format.raw/*39.1*/("""font-size: 50px;
 text-align: center;
 font-weight: bold;
 color: black;
 margin: 20px 0 70px 0;
-"""),format.raw/*42.1*/("""}"""),format.raw/*42.2*/("""
+"""),format.raw/*44.1*/("""}"""),format.raw/*44.2*/("""
 
-"""),format.raw/*44.1*/(""".btn"""),format.raw/*44.5*/("""{"""),format.raw/*44.6*/("""
-    """),format.raw/*45.5*/("""text-align: center;
-  width: 90%;
+"""),format.raw/*46.1*/(""".btn"""),format.raw/*46.5*/("""{"""),format.raw/*46.6*/("""
+  """),format.raw/*47.3*/("""width: 90%;
   border-radius: 50px;
   padding: 12px;
   border: none;
@@ -86,41 +87,54 @@ margin: 20px 0 70px 0;
   margin: 40px 0;
   color: white;
   background-image: linear-gradient(170deg, #B621fe, #1fd1f9);
-"""),format.raw/*57.1*/("""}"""),format.raw/*57.2*/("""
- """),format.raw/*58.2*/("""</style>
+"""),format.raw/*58.1*/("""}"""),format.raw/*58.2*/("""
+
+"""),format.raw/*60.1*/(""".form-group"""),format.raw/*60.12*/("""{"""),format.raw/*60.13*/("""
+    """),format.raw/*61.5*/("""text-align: center;
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    border: none;
+    border-bottom: 1px solid #fff;
+
+"""),format.raw/*68.1*/("""}"""),format.raw/*68.2*/("""
+ """),format.raw/*69.2*/("""</style>
+
     <div class="container">
             <div class="box">
     <p class="lead"></p>
     <div class="col-xs-5">
         <h1>Login</h1> 
-        """),_display_(/*64.10*/if(loginForm.hasGlobalErrors)/*64.39*/ {_display_(Seq[Any](format.raw/*64.41*/("""
-            """),format.raw/*65.13*/("""<p class="alert alert-warning">
-                """),_display_(/*66.18*/loginForm/*66.27*/.globalError.message),format.raw/*66.47*/(""";
+        """),_display_(/*76.10*/if(loginForm.hasGlobalErrors)/*76.39*/ {_display_(Seq[Any](format.raw/*76.41*/("""
+            """),format.raw/*77.13*/("""<p class="alert alert-warning">
+                """),_display_(/*78.18*/loginForm/*78.27*/.globalError.message),format.raw/*78.47*/(""";
             </p>
-        """)))}),format.raw/*68.10*/("""
-        """),_display_(/*69.10*/if(flash.containsKey("error"))/*69.40*/ {_display_(Seq[Any](format.raw/*69.42*/("""
-            """),format.raw/*70.13*/("""<p class="alert alert-warning">
-                """),_display_(/*71.18*/flash/*71.23*/.get("loginRequired")),format.raw/*71.44*/("""
-            """),format.raw/*72.13*/("""</p>
-        """)))}),format.raw/*73.10*/("""
+        """)))}),format.raw/*80.10*/("""
+        """),_display_(/*81.10*/if(flash.containsKey("error"))/*81.40*/ {_display_(Seq[Any](format.raw/*81.42*/("""
+            """),format.raw/*82.13*/("""<p class="alert alert-warning">
+                """),_display_(/*83.18*/flash/*83.23*/.get("loginRequired")),format.raw/*83.44*/("""
+            """),format.raw/*84.13*/("""</p>
+        """)))}),format.raw/*85.10*/("""
 
-"""),format.raw/*75.1*/("""<!-- this is the login form -->
-        """),_display_(/*76.10*/helper/*76.16*/.form(controllers.security.routes.LoginCtrl.loginSubmit())/*76.74*/ {_display_(Seq[Any](format.raw/*76.76*/("""
-            """),_display_(/*77.14*/CSRF/*77.18*/.formField),format.raw/*77.28*/("""
+"""),format.raw/*87.1*/("""<!-- this is the login form -->
+        """),_display_(/*88.10*/helper/*88.16*/.form(controllers.security.routes.LoginCtrl.loginSubmit())/*88.74*/ {_display_(Seq[Any](format.raw/*88.76*/("""
+            """),_display_(/*89.14*/CSRF/*89.18*/.formField),format.raw/*89.28*/("""
 
-            """),format.raw/*79.13*/("""<div class="form-group">
-                """),_display_(/*80.18*/inputText(loginForm("email"), '_label -> "", 
-                'class -> "form-control input-xs", 'placeholder -> "Email")),format.raw/*81.76*/("""
-            """),format.raw/*82.13*/("""</div>
+            """),format.raw/*91.13*/("""<div class="form-group">
+                <p> Enter Email</p>
+                """),_display_(/*93.18*/inputText(loginForm("email"), '_label -> "", 
+                'class -> "form-control input-xs", 'placeholder -> "Email")),format.raw/*94.76*/("""
+            """),format.raw/*95.13*/("""</div>
             <div class="form-group">
-                """),_display_(/*84.18*/inputPassword(loginForm("password"), '_label -> "", 
-                'class -> "form-control input-xs", 'placeholder -> "Password")),format.raw/*85.79*/("""
-            """),format.raw/*86.13*/("""</div>
+                    <p> Enter Password</p>
+                """),_display_(/*98.18*/inputPassword(loginForm("password"), '_label -> "", 
+                'class -> "form-control input-xs", 'placeholder -> "Password")),format.raw/*99.79*/("""
+            """),format.raw/*100.13*/("""</div>
             <div class="form-group">
                 <input type="submit" value="Sign In" class="btn btn-primary">
             </div>
-        """)))}),format.raw/*90.10*/("""
-    """),format.raw/*91.5*/("""</div>
+        """)))}),format.raw/*104.10*/("""
+    """),format.raw/*105.5*/("""</div>
             </div></div>
 """)))}))
       }
@@ -138,11 +152,11 @@ margin: 20px 0 70px 0;
 
               /*
                   -- GENERATED --
-                  DATE: Wed Apr 10 14:57:01 IST 2019
+                  DATE: Wed Apr 10 15:52:32 IST 2019
                   SOURCE: /home/wdd/Desktop/ITSM/ShoppinCartLY/app/views/login.scala.html
-                  HASH: c839b51cb4cc463de0b195b03c6c7656331878f7
-                  MATRIX: 651->1|683->27|1023->54|1132->92|1177->90|1204->108|1231->110|1258->129|1297->131|1328->136|1374->155|1402->156|1430->158|1754->455|1782->456|1811->458|1842->462|1870->463|1900->466|2140->679|2168->680|2196->681|2225->683|2253->684|2281->685|2401->778|2429->779|2458->781|2489->785|2517->786|2549->791|2838->1053|2866->1054|2895->1056|3074->1208|3112->1237|3152->1239|3193->1252|3269->1301|3287->1310|3328->1330|3387->1358|3424->1368|3463->1398|3503->1400|3544->1413|3620->1462|3634->1467|3676->1488|3717->1501|3762->1515|3791->1517|3859->1558|3874->1564|3941->1622|3981->1624|4022->1638|4035->1642|4066->1652|4108->1666|4177->1708|4319->1829|4360->1842|4448->1903|4600->2034|4641->2047|4822->2197|4854->2202
-                  LINES: 24->1|25->2|30->3|33->4|36->3|37->5|38->6|38->6|38->6|39->7|40->8|40->8|41->9|54->22|54->22|56->24|56->24|56->24|57->25|67->35|67->35|68->36|68->36|68->36|69->37|74->42|74->42|76->44|76->44|76->44|77->45|89->57|89->57|90->58|96->64|96->64|96->64|97->65|98->66|98->66|98->66|100->68|101->69|101->69|101->69|102->70|103->71|103->71|103->71|104->72|105->73|107->75|108->76|108->76|108->76|108->76|109->77|109->77|109->77|111->79|112->80|113->81|114->82|116->84|117->85|118->86|122->90|123->91
+                  HASH: 1e7299318a2f5960fe2193cf7ccb9b36a9cdb3b8
+                  MATRIX: 651->1|683->27|1023->54|1132->92|1177->90|1204->108|1231->110|1258->129|1297->131|1328->136|1373->154|1401->155|1429->157|1753->454|1781->455|1810->457|1841->461|1869->462|1899->465|2182->721|2210->722|2239->724|2268->726|2296->727|2324->728|2444->821|2472->822|2501->824|2532->828|2560->829|2590->832|2857->1072|2885->1073|2914->1075|2953->1086|2982->1087|3014->1092|3169->1220|3197->1221|3226->1223|3406->1376|3444->1405|3484->1407|3525->1420|3601->1469|3619->1478|3660->1498|3719->1526|3756->1536|3795->1566|3835->1568|3876->1581|3952->1630|3966->1635|4008->1656|4049->1669|4094->1683|4123->1685|4191->1726|4206->1732|4273->1790|4313->1792|4354->1806|4367->1810|4398->1820|4440->1834|4545->1912|4687->2033|4728->2046|4859->2150|5011->2281|5053->2294|5235->2444|5268->2449
+                  LINES: 24->1|25->2|30->3|33->4|36->3|37->5|38->6|38->6|38->6|39->7|40->8|40->8|41->9|54->22|54->22|56->24|56->24|56->24|57->25|68->36|68->36|70->38|70->38|70->38|71->39|76->44|76->44|78->46|78->46|78->46|79->47|90->58|90->58|92->60|92->60|92->60|93->61|100->68|100->68|101->69|108->76|108->76|108->76|109->77|110->78|110->78|110->78|112->80|113->81|113->81|113->81|114->82|115->83|115->83|115->83|116->84|117->85|119->87|120->88|120->88|120->88|120->88|121->89|121->89|121->89|123->91|125->93|126->94|127->95|130->98|131->99|132->100|136->104|137->105
                   -- GENERATED --
               */
           
