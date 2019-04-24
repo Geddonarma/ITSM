@@ -11,7 +11,7 @@ import play.data.validation.*;
 @DiscriminatorValue("a")
 @Entity
 
-public class Administrator extends User{
+public class Administrator extends User {
 
 	public Administrator() {
 
@@ -21,6 +21,6 @@ public class Administrator extends User{
 	{
 		super(email, role, name, password);
 	}
+
+}
 	
-	
-} 
