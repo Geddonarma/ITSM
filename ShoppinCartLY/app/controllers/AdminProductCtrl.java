@@ -54,7 +54,7 @@ public class AdminProductCtrl extends Controller {
 		return u;
 	}
     public Result index() {
-        return redirect(controllers.routes.AdminProductCtrl.index());
+	return redirect(controllers.routes.AdminProductCtrl.listProducts(0));
     }
     // Get a list of products
     // If cat parameter is 0 then return all products
