@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
-// @SOURCE:/home/wdd/IT/ITSM/ShoppinCartLY/conf/routes
-// @DATE:Tue Apr 23 21:34:36 IST 2019
+// @SOURCE:/home/wdd/AS/ITSM/ShoppinCartLY/conf/routes
+// @DATE:Sat Apr 27 11:42:41 IST 2019
 
 import play.api.mvc.Call
 

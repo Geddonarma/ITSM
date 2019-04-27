@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
-// @SOURCE:/home/wdd/IT/ITSM/ShoppinCartLY/conf/routes
-// @DATE:Tue Apr 23 21:34:36 IST 2019
+// @SOURCE:/home/wdd/AS/ITSM/ShoppinCartLY/conf/routes
+// @DATE:Sat Apr 27 11:42:41 IST 2019
 
 package router
 
@@ -52,7 +52,7 @@ class Routes(
   }
 
   def documentation = List(
-    ("""GET""", this.prefix, """controllers.ProductCtrl.index"""),
+    ("""GET""", this.prefix, """controllers.ProductCtrl.index()"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """listProducts""", """controllers.ProductCtrl.listProducts(cat:Long ?= 0, filter:String ?= "")"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """productDetails/""" + "$" + """id<[^/]+>""", """controllers.ProductCtrl.productDetails(id:Long)"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """about""", """controllers.ProductCtrl.about"""),
@@ -91,7 +91,7 @@ class Routes(
     PathPattern(List(StaticPart(this.prefix)))
   )
   private[this] lazy val controllers_ProductCtrl_index0_invoker = createInvoker(
-    ProductCtrl_0.index,
+    ProductCtrl_0.index(),
     play.api.routing.HandlerDef(this.getClass.getClassLoader,
       "router",
       "controllers.ProductCtrl",
@@ -578,7 +578,7 @@ class Routes(
     // @LINE:6
     case controllers_ProductCtrl_index0_route(params@_) =>
       call { 
-        controllers_ProductCtrl_index0_invoker.call(ProductCtrl_0.index)
+        controllers_ProductCtrl_index0_invoker.call(ProductCtrl_0.index())
       }
   
     // @LINE:10

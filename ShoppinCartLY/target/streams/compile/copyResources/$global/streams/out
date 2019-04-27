@@ -1,9 +1,9 @@
 [0m[[0m[0mdebug[0m] [0m[0mCopy resource mappings: [0m
-[0m[[0m[0mdebug[0m] [0m[0m	(/home/wdd/IT/ITSM/ShoppinCartLY/conf/evolutions,/home/wdd/IT/ITSM/ShoppinCartLY/target/scala-2.12/classes/evolutions)[0m
-[0m[[0m[0mdebug[0m] [0m[0m	(/home/wdd/IT/ITSM/ShoppinCartLY/conf/application.conf,/home/wdd/IT/ITSM/ShoppinCartLY/target/scala-2.12/classes/application.conf)[0m
-[0m[[0m[0mdebug[0m] [0m[0m	(/home/wdd/IT/ITSM/ShoppinCartLY/conf/logback.xml,/home/wdd/IT/ITSM/ShoppinCartLY/target/scala-2.12/classes/logback.xml)[0m
-[0m[[0m[0mdebug[0m] [0m[0m	(/home/wdd/IT/ITSM/ShoppinCartLY/conf/routes,/home/wdd/IT/ITSM/ShoppinCartLY/target/scala-2.12/classes/routes)[0m
-[0m[[0m[0mdebug[0m] [0m[0m	(/home/wdd/IT/ITSM/ShoppinCartLY/conf/evolutions/default,/home/wdd/IT/ITSM/ShoppinCartLY/target/scala-2.12/classes/evolutions/default)[0m
-[0m[[0m[0mdebug[0m] [0m[0m	(/home/wdd/IT/ITSM/ShoppinCartLY/conf/evolutions/default/3.sql,/home/wdd/IT/ITSM/ShoppinCartLY/target/scala-2.12/classes/evolutions/default/3.sql)[0m
-[0m[[0m[0mdebug[0m] [0m[0m	(/home/wdd/IT/ITSM/ShoppinCartLY/conf/evolutions/default/2.sql,/home/wdd/IT/ITSM/ShoppinCartLY/target/scala-2.12/classes/evolutions/default/2.sql)[0m
-[0m[[0m[0mdebug[0m] [0m[0m	(/home/wdd/IT/ITSM/ShoppinCartLY/conf/evolutions/default/1.sql,/home/wdd/IT/ITSM/ShoppinCartLY/target/scala-2.12/classes/evolutions/default/1.sql)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	(/home/wdd/AS/ITSM/ShoppinCartLY/conf/evolutions,/home/wdd/AS/ITSM/ShoppinCartLY/target/scala-2.12/classes/evolutions)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	(/home/wdd/AS/ITSM/ShoppinCartLY/conf/application.conf,/home/wdd/AS/ITSM/ShoppinCartLY/target/scala-2.12/classes/application.conf)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	(/home/wdd/AS/ITSM/ShoppinCartLY/conf/logback.xml,/home/wdd/AS/ITSM/ShoppinCartLY/target/scala-2.12/classes/logback.xml)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	(/home/wdd/AS/ITSM/ShoppinCartLY/conf/routes,/home/wdd/AS/ITSM/ShoppinCartLY/target/scala-2.12/classes/routes)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	(/home/wdd/AS/ITSM/ShoppinCartLY/conf/evolutions/default,/home/wdd/AS/ITSM/ShoppinCartLY/target/scala-2.12/classes/evolutions/default)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	(/home/wdd/AS/ITSM/ShoppinCartLY/conf/evolutions/default/3.sql,/home/wdd/AS/ITSM/ShoppinCartLY/target/scala-2.12/classes/evolutions/default/3.sql)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	(/home/wdd/AS/ITSM/ShoppinCartLY/conf/evolutions/default/2.sql,/home/wdd/AS/ITSM/ShoppinCartLY/target/scala-2.12/classes/evolutions/default/2.sql)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	(/home/wdd/AS/ITSM/ShoppinCartLY/conf/evolutions/default/1.sql,/home/wdd/AS/ITSM/ShoppinCartLY/target/scala-2.12/classes/evolutions/default/1.sql)[0m
