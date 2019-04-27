@@ -137,3 +137,8 @@ Caused by: java.lang.NullPointerException: null
 	at play.api.mvc.Action.$anonfun$apply$2(Action.scala:96)
 	at scala.concurrent.Future.$anonfun$flatMap$1(Future.scala:304)
 	... 13 common frames omitted
+2019-04-27 11:45:27,122 [WARN] from application in application-akka.actor.default-dispatcher-21 - The "validate" method in class "models.users.Login" is deprecated since Play 2.6. To migrate to class-level constraints see https://www.playframework.com/documentation/2.6.x/Migration26#java-form-changes and https://www.playframework.com/documentation/2.6.x/JavaForms#Advanced-validation
+2019-04-27 11:48:41,830 [WARN] from application in application-akka.actor.default-dispatcher-55 - The "validate" method in class "models.users.Login" is deprecated since Play 2.6. To migrate to class-level constraints see https://www.playframework.com/documentation/2.6.x/Migration26#java-form-changes and https://www.playframework.com/documentation/2.6.x/JavaForms#Advanced-validation
+2019-04-27 11:51:05,628 [WARN] from application in application-akka.actor.default-dispatcher-67 - The "validate" method in class "models.users.Login" is deprecated since Play 2.6. To migrate to class-level constraints see https://www.playframework.com/documentation/2.6.x/Migration26#java-form-changes and https://www.playframework.com/documentation/2.6.x/JavaForms#Advanced-validation
+2019-04-27 11:51:43,958 [INFO] from play.core.server.AkkaHttpServer in pool-5-thread-5 - Stopping server...
+2019-04-27 11:51:44,075 [INFO] from application in application-akka.actor.default-dispatcher-69 - Shutting down connection pool.
