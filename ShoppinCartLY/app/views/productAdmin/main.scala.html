@@ -4,39 +4,105 @@
 <!DOCTYPE html>
 
 <html lang="en">
+<style>
 
+.dropdown .nav{
+  float: none;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn{
+  font-size: 17px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #c2eff5;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(45, 138, 167, 0.377);
+  z-index: 1;
+}
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: rgba(45, 45, 48, 0.979);
+  color: white;
+}
+
+.dropdown-content a:hover {
+  background-color: rgb(174, 205, 212);
+  color: black;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown .dropbtn {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+
+  </style>
 <head>
     <meta charset="utf-8">
-    <title>Online Shop - @title</title>
+    <title>Portable Devices- @title</title>
     <!-- Bootstrap Core CSS -->
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.css" rel="stylesheet" />
     <!-- Custom CSS -->
     <link href="@routes.Assets.versioned("stylesheets/main.css")" rel="stylesheet" />
 </head>
-
 <body>
 
     <nav class="navbar navbar-inverse">
         <div class="container-fluid">
-            <div class="navbar-header">
-                <a class="navbar-brand" href="/">Portable Devices Shop</a>
+            <div class="navbar-header">         
             </div>
 
             <ul class="nav navbar-nav">
+                </li>  
+                <li @if(title=="Portable Devices" ){class="active"}>
+                     <a class="navbar-brand" href="@routes.AdminProductCtrl.listProducts(0)">Portable Devices</a>
+                </li>  
+                <li @if(title=="Home" ){class="active"}>
+                        <a class="navbar-brand" href="@routes.ProductCtrl.index()">Home</a>
+                       </li>
 
-                <li @if(title =="Products" ){class="active"}>
-                    <a href="@routes.AdminProductCtrl.listProducts(0)">Products</a>
+                <li @if(title=="Products" ){class="active"}>
+                 <a class="navbar-brand" href="@routes.AdminProductCtrl.listProducts(0)">Products</a>
                 </li>
-                <li>
-                    <a href="#">About</a>
-                </li>
-                <li>
-                    <a href="#">Services</a>
+
+              <!---- <li @if(title=="About" ){class="active"}>
+                    <a href="@routes.ProductCtrl.about">About us</a>
                 </li>
 
                 <li>
-                    <a href="#">Contact</a>
+                    <li @if(title=="Contact" ){class="active"}>
+                        <a href="@routes.ProductCtrl.contact">Contact us</a>
+                    </li>
                 </li>
+            -->
+            
+                <li @if(title=="Signup" ){class="active"}>
+                    <a href="@controllers.security.routes.LoginCtrl.signup">Sign Up</a>
+                </li> 
+
+
+
                 <li @if(title=="Login"){class="active"}>
                     @if(user != null) {
                         <a href="@controllers.security.routes.LoginCtrl.logout()">Logout @user.getName()</a>
@@ -45,6 +111,18 @@
                     }
 
                 </li>
+
+
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropbtn">Dropdown Menu</a>
+                    
+                        <div class="dropdown-content">
+                          <a href="@routes.AdminProductCtrl.listProducts(0)">Search for Products</a>
+                          <a href="@routes.ProductCtrl.about">About Us</a>
+                          <a href="@routes.ProductCtrl.contact">Contact Us</a>
+                          
+                        </div>
+                    </li>
             </ul>
 
         </div>
@@ -63,8 +141,10 @@
         <footer>
         <row>
             <div class="col-md-12">
+               <p class="text-center">
                 Copyright
-                <strong>Online Shop</strong>
+                <strong>Portable Devices Online Store</strong>
+                </p>
             </div>
         </row>
     </footer>
