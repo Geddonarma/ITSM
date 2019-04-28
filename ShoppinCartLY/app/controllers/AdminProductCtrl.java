@@ -106,7 +106,7 @@ public class AdminProductCtrl extends Controller {
                                 // Get category ids (checked boxes from form)
                     // Find category objects and set categories list for this product
                     for (Long cat : newProduct.getCatSelect()) {
-                        newProduct.categories.add(Category.find.byId(cat));
+                        newProduct.getCategories().add(Category.find.byId(cat));
                     }
                 newProduct.update();
         }
