@@ -120,5 +120,12 @@ public class Product extends Model {
             stock = stock +q;
             System.out.println("Stock is: " +stock);
         }
+       public List<Category> getCategories() {    
+        return categories;
+    }
+ 
+    public void setCategories(List<Category> categories) {
+        this.categories = categories;
+    }
     }
     
