@@ -78,9 +78,7 @@
                 <li @if(title=="Portable Devices" ){class="active"}>
                      <a class="navbar-brand" href="@routes.AdminProductCtrl.listProducts(0)">Portable Devices</a>
                 </li>  
-                <li @if(title=="Home" ){class="active"}>
-                        <a class="navbar-brand" href="@routes.ProductCtrl.index()">Home</a>
-                       </li>
+
 
                 <li @if(title=="Products" ){class="active"}>
                  <a class="navbar-brand" href="@routes.AdminProductCtrl.listProducts(0)">Products</a>
@@ -97,10 +95,6 @@
                 </li>
             -->
             
-                <li @if(title=="Signup" ){class="active"}>
-                    <a href="@controllers.security.routes.LoginCtrl.signup">Sign Up</a>
-                </li> 
-
 
 
                 <li @if(title=="Login"){class="active"}>
@@ -118,8 +112,6 @@
                     
                         <div class="dropdown-content">
                           <a href="@routes.AdminProductCtrl.listProducts(0)">Search for Products</a>
-                          <a href="@routes.ProductCtrl.about">About Us</a>
-                          <a href="@routes.ProductCtrl.contact">Contact Us</a>
                           
                         </div>
                     </li>
