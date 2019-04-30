@@ -33,7 +33,7 @@
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #c2eff5;
+  background-color: #White;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(45, 138, 167, 0.377);
   z-index: 1;
@@ -103,8 +103,8 @@
                     <a href="@controllers.security.routes.LoginCtrl.signup">Sign Up</a>
                 </li> 
 
-
-
+            </ul>
+                <ul class="nav navbar-nav navbar-right">
                 <li @if(title=="Login"){class="active"}>
                     @if(user != null) {
                         <a href="@controllers.security.routes.LoginCtrl.logout()">Logout @user.getName()</a>
