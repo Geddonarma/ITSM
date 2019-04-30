@@ -1,32 +1,40 @@
 @(user: models.users.User)
 @main("Contact",user){
-
-<h1>Contact Us!</h1>
-<br>
-
-<h4><b>Customer support can be reached at these available times:</b></h4>
-
-<p>Monday: 8am - 6pm
-<br>
-Tuesday: 8am - 6pm
-<br>
-Wednseday: 8am - 6pm
-<br>
-Thursday: 8am - 6pm
-<br>
-Friday: 8am - 4pm
-<br>
-Saturday: 8am - 6pm
-<br>
-Sunday: 8am - 4pm
-</p>
-<br>
-
-<h4><b>Email Us</b></h4>
-<p>
-    Email: "managerproductscom" for Manager assistace on Product enquiries
-    <br>
-    Email: "adminproductscom" for Administration assistace on Account enquiries
-</p>
-
-}	
+	
+    <body>
+	<div class="info">
+		<div class="container">
+				<h3 class="text-center">Contact</h3>
+				<p class="text-center"><em>we wants to hear your feedback!</em></p>
+				<div class="row">
+				<div class="col-md-4">
+				<p>Have a question? Drop a note.</p>
+				<p><span class="glyphicon glyphicon-map-marker"></span>Based in Dublin, Ireland</p>
+				<p><span class="glyphicon glyphicon-phone"></span>Phone: +00 4573301</p>
+				<p><span class="glyphicon glyphicon-envelope"></span>Email: Portable devices lmail.com</p>
+						</div>
+						<div class="col-md-8">
+							<div class="row">
+								<div class="col-sm-6 form-group">
+									<input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+								</div>
+								<div class="col-sm-6 form-group">
+									<input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+								</div>
+							</div>
+							<textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea>
+							<br>
+							<div class="row">
+								<div class="col-md-12 form-group">
+									<button class="btn pull-right" type="submit">Send</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>	
+			
+	</div>
+		
+		</div>
+    </body>
+   }
